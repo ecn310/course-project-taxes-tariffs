@@ -17,6 +17,8 @@ __Conduct__: Be respectful and be a good person.
 
 __Conflicts__: Talk it through. If someone submits an assignment late or does not split the work load evenly, then they have to run 24 miles at Barnes.
 
-Signature:
+Signatures:
 
 Umar Bilgrammi 09/14/2024
+
+Kathryn Sarrge 09/16/2024
