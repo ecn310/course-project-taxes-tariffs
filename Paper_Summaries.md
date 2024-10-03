@@ -18,3 +18,12 @@ https://www.cambridge.org/core/journals/international-organization/article/taxat
 - **Conceptual Framework**: Firstly, develope a theory of taxation politics and apply it to the tariff. Then, submit the theory to an empirical test. Finally, from the extent of the treasury's dependence upon it and from the distributive pattern of its burdens and benefits, the article can make its conclusion.
 - **Research Hypothesis**: "Revenue dependence and distributive incidence account for several diverse aspects of American tariff policy, including the structure of its coalitions, the shifts in its objectives, and the timing of its innovations."
 - **Theories**: "Analysts grounded in the traditions of American politics credited tariff outcomes to domestic political pressures. on the other half, analysists attributed tariff policy to pursuits of nationsal interest in an anarchic world economy."
+
+third paper: Coordinating Tax Reforms in the Poorest Countries: Can Lost Tariffs Be Recouped?, S Waglé, 2011, World Bank Policy Research Working Paper No. 5919.
+
+4th: find later in the future
+
+5th: find later in the future 
+
+by saturday: 2 causal diagrams for first 2 papers -- 3rd, 4th, 5th paper citations 
+4th and 5th --> use google scholar cited feature to find the papers 
