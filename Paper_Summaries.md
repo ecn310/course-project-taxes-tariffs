@@ -22,6 +22,8 @@ https://www.cambridge.org/core/journals/international-organization/article/taxat
 
 Waglé, Swarnim. "Coordinating tax reforms in the poorest countries: Can lost tariffs be recouped?." World Bank Policy Research Working Paper 5919 (2011).
 
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1974850
+
 4th: find later in the future
 
 5th: find later in the future 
