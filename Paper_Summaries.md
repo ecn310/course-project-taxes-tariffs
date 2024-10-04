@@ -1,4 +1,4 @@
-Michael, Michael S., Panos Hatzipanayotou, and Stephen M. Miller. "Integrated reforms of tariffs and consumption taxes." Journal of Public Economics 52.3 (1993): 417-428. 
+1. Michael, Michael S., Panos Hatzipanayotou, and Stephen M. Miller. "Integrated reforms of tariffs and consumption taxes." Journal of Public Economics 52.3 (1993): 417-428. 
 https://www.sciencedirect.com/science/article/pii/004727279390044T
 - Professor Ly suggested it.
 - **The big question of the paper**: Will reducing tariffs and increasing consumption taxes within an integrated tax structure enhance welfare in less-developed countries while maintaining government revenue?
@@ -7,8 +7,13 @@ https://www.sciencedirect.com/science/article/pii/004727279390044T
 - **Research Hypothesis**: There are reforms within the indirect tax system that improve welfare and keep government revenue constant.
 - **Conceptual Framework**: "Firstly, develope a general equilibrium trade model of a small open economy with fixed factor supplies, then, examine the conditions under which adjustments in indirect taxation are welfare improving, ignoring the government revenue effects of such tax reforms, afterwards, consider the conditions where reforms of indirect taxation keep revenue constant and improve welfare, finally, some concluding remarks."
 
+```mermaid
+flowchart LR
+A["Tariff Rate <br>"] --(-)--> B["Substitutes are bought less"] --(#43;)--> C["Welfare"]
+```
 
-Hansen, John Mark. “Taxation and the Political Economy of the Tariff.” International Organization 44.4 (1990): 527–551.
+
+2. Hansen, John Mark. “Taxation and the Political Economy of the Tariff.” International Organization 44.4 (1990): 527–551.
 
 https://www.cambridge.org/core/journals/international-organization/article/taxation-and-the-political-economy-of-the-tariff/862A74C3F04C078C3C4FEF3C556606FF
 
@@ -20,18 +25,17 @@ https://www.cambridge.org/core/journals/international-organization/article/taxat
 - **Theories**: "Analysts grounded in the traditions of American politics credited tariff outcomes to domestic political pressures. on the other half, analysists attributed tariff policy to pursuits of nationsal interest in an anarchic world economy."
 
 
-Waglé, Swarnim. "Coordinating tax reforms in the poorest countries: Can lost tariffs be recouped?." World Bank Policy Research Working Paper 5919 (2011).
+3. Waglé, Swarnim. "Coordinating tax reforms in the poorest countries: Can lost tariffs be recouped?." World Bank Policy Research Working Paper 5919 (2011).
 
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1974850
 
 
-Ho, Thuy Tien, Xuan Hang Tran, and Quang Khai Nguyen. "Tax revenue-economic growth relationship and the role of trade openness in developing countries." Cogent Business & Management 10.2 (2023): 2213959.
+4. Ho, Thuy Tien, Xuan Hang Tran, and Quang Khai Nguyen. "Tax revenue-economic growth relationship and the role of trade openness in developing countries." Cogent Business & Management 10(2) (2023)
 
 https://www.tandfonline.com/doi/full/10.1080/23311975.2023.2213959
 
-Karimi, Mohammad, et al. "The impact of trade liberalization on tax structure in developing countries." Procedia Economics and Finance 36 (2016): 274-282.
+5. Karimi, Mohammad, et al. "The impact of trade liberalization on tax structure in developing countries." Procedia Economics and Finance 36 (2016): 274-282.
 
 https://www.sciencedirect.com/science/article/pii/S2212567116300387
 
-by saturday: 2 causal diagrams for first 2 papers -- 3rd, 4th, 5th paper citations 
-4th and 5th --> use google scholar cited feature to find the papers 
+by saturday: 2 causal diagrams for first 2 papers 
