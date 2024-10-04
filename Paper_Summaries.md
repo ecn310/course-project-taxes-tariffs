@@ -18,11 +18,16 @@ A["Tariff Rate <br>"] --(-)--> B["Substitutes are bought less"] --(#43;)--> C["W
 https://www.cambridge.org/core/journals/international-organization/article/taxation-and-the-political-economy-of-the-tariff/862A74C3F04C078C3C4FEF3C556606FF
 
 -  **How I found this paper**: provided by Professor Ly
--  **Big picture question**: To research the implications of a connection that is widely acknolowdged and rarely appreciated by exploring the nexus of tariffs amd taxes.
+-  **Big picture question**: To research the implications of a connection that is widely acknowledged and rarely appreciated by exploring the nexus of tariffs and taxes.
 - **Specific research question**: Exploring how tariffs were instruments of advantage because they were the outcome of private benefits pursued to collective detriment.
-- **Conceptual Framework**: Firstly, develope a theory of taxation politics and apply it to the tariff. Then, submit the theory to an empirical test. Finally, from the extent of the treasury's dependence upon it and from the distributive pattern of its burdens and benefits, the article can make its conclusion.
+- **Conceptual Framework**: Firstly, develop a theory of taxation politics and apply it to the tariff. Then, submit the theory to an empirical test. Finally, from the extent of the treasury's dependence upon it and from the distributive pattern of its burdens and benefits, the article can make its conclusion.
 - **Research Hypothesis**: "Revenue dependence and distributive incidence account for several diverse aspects of American tariff policy, including the structure of its coalitions, the shifts in its objectives, and the timing of its innovations."
-- **Theories**: "Analysts grounded in the traditions of American politics credited tariff outcomes to domestic political pressures. on the other half, analysists attributed tariff policy to pursuits of nationsal interest in an anarchic world economy."
+- **Theories**: "Analysts grounded in the traditions of American politics credited tariff outcomes to domestic political pressures. On the other half, analysts attributed tariff policy to pursuits of national interest in an anarchic world economy."
+
+```mermaid
+flowchart LR
+A["Tariff Rate <br>"] --(#43;)--> B["Government Revenue"] --(#43;)--> C["Theoretical tax"]
+```
 
 
 3. Waglé, Swarnim. "Coordinating tax reforms in the poorest countries: Can lost tariffs be recouped?." World Bank Policy Research Working Paper 5919 (2011).
@@ -38,4 +43,3 @@ https://www.tandfonline.com/doi/full/10.1080/23311975.2023.2213959
 
 https://www.sciencedirect.com/science/article/pii/S2212567116300387
 
-by saturday: 2 causal diagrams for first 2 papers 
