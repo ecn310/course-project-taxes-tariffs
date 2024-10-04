@@ -29,8 +29,9 @@ Ho, Thuy Tien, Xuan Hang Tran, and Quang Khai Nguyen. "Tax revenue-economic grow
 
 https://www.tandfonline.com/doi/full/10.1080/23311975.2023.2213959
 
+Karimi, Mohammad, et al. "The impact of trade liberalization on tax structure in developing countries." Procedia Economics and Finance 36 (2016): 274-282.
 
-5th paper: The Impact of Trade Liberalization on Tax Structure in Developing Countries https://www.sciencedirect.com/science/article/pii/S2212567116300387
+https://www.sciencedirect.com/science/article/pii/S2212567116300387
 
 by saturday: 2 causal diagrams for first 2 papers -- 3rd, 4th, 5th paper citations 
 4th and 5th --> use google scholar cited feature to find the papers 
