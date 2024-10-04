@@ -19,7 +19,8 @@ https://www.cambridge.org/core/journals/international-organization/article/taxat
 - **Research Hypothesis**: "Revenue dependence and distributive incidence account for several diverse aspects of American tariff policy, including the structure of its coalitions, the shifts in its objectives, and the timing of its innovations."
 - **Theories**: "Analysts grounded in the traditions of American politics credited tariff outcomes to domestic political pressures. on the other half, analysists attributed tariff policy to pursuits of nationsal interest in an anarchic world economy."
 
-third paper: Coordinating Tax Reforms in the Poorest Countries: Can Lost Tariffs Be Recouped?, S Waglé, 2011, World Bank Policy Research Working Paper No. 5919.
+
+Waglé, Swarnim. "Coordinating tax reforms in the poorest countries: Can lost tariffs be recouped?." World Bank Policy Research Working Paper 5919 (2011).
 
 4th: find later in the future
 
