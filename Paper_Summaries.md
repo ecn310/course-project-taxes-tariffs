@@ -24,9 +24,9 @@ Waglé, Swarnim. "Coordinating tax reforms in the poorest countries: Can lost ta
 
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1974850
 
-4th paper: [Tax revenue-economic growth relationship and the role of trade openness in developing countries](url)
+4th paper: Tax revenue-economic growth relationship and the role of trade openness in developing countries / https://www.tandfonline.com/doi/full/10.1080/23311975.2023.2213959
 
-5th paper: [https://www.sciencedirect.com/science/article/pii/S2212567116300387](url)
+5th paper: The Impact of Trade Liberalization on Tax Structure in Developing Countries https://www.sciencedirect.com/science/article/pii/S2212567116300387
 
 by saturday: 2 causal diagrams for first 2 papers -- 3rd, 4th, 5th paper citations 
 4th and 5th --> use google scholar cited feature to find the papers 
