@@ -37,7 +37,7 @@ https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1974850
 -  **How I found this paper**: provided by Professor Ly
 -  **Big picture question**: How do low-income countries pivot from trade taxes to domestic consumption taxes? 
 - **Specific research question**: How effective are transitions from trade taxes to domestic consumption taxes for low-income countries when its come to revenue?
-- **Conceptual Framework**: 
+- **Conceptual Framework**: Used actual data on imported value, tariffs, and up to ten domestic taxes on more than 400,000 import transactions from Nepal to develop scenarios in which tariffs can be cut with the least impact on total revenue. Also used partial equilibrium models to produce estimates that assuage fears about the scale of loss of revenue and production.
 - **Research Hypothesis**: If low-income countries properly enforce domestic consumption taxes, then they will better offset reductions in comparison to their use of trade taxes because they will see a positive change in estimated revenue. 
 - **Theories**: When low-income countries have higher domestic consumption taxes in relation to trades taxes, and these taxes are properly enforced, they will minimize loss of revenue.
 
