@@ -34,6 +34,14 @@ A["Tariff Rate <br>"] --(#43;)--> B["Government Revenue"] --(#43;)--> C["Theoret
 
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1974850
 
+-  **How I found this paper**: provided by Professor Ly
+-  **Big picture question**: How do low-income countries pivot from trade taxes to domestic consumption taxes? 
+- **Specific research question**: How effective are transitions from trade taxes to domestic consumption taxes for low-income countries when its come to revenue?
+- **Conceptual Framework**: 
+- **Research Hypothesis**: If low-income countries properly enforce domestic consumption taxes, then they will better offset reductions in comparison to their use of trade taxes because they will see a positive change in estimated revenue. 
+- **Theories**: When low-income countries have higher domestic consumption taxes in relation to trades taxes, and these taxes are properly enforced, they will minimize loss of revenue.
+
+
 
 4. Ho, Thuy Tien, Xuan Hang Tran, and Quang Khai Nguyen. "Tax revenue-economic growth relationship and the role of trade openness in developing countries." Cogent Business & Management 10(2) (2023)
 
