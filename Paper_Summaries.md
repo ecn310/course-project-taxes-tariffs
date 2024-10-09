@@ -42,6 +42,11 @@ https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1974850
 - **Theories**: When low-income countries have higher domestic consumption taxes in relation to trades taxes, and these taxes are properly enforced, they will minimize loss of revenue.
 
 
+```mermaid
+flowchart LR
+A["Higher domestic consumption taxes in relation to trade taxes<br>"] --(+)--> B["Expense Reduction"] --(#43;)--> C["Positive Revenue"]
+```
+
 
 4. Ho, Thuy Tien, Xuan Hang Tran, and Quang Khai Nguyen. "Tax revenue-economic growth relationship and the role of trade openness in developing countries." Cogent Business & Management 10(2) (2023)
 
