@@ -10,7 +10,7 @@ https://www.sciencedirect.com/science/article/pii/004727279390044T
 
 ```mermaid
 flowchart LR
-A["Tariff Rate <br>"] --(-)--> B["Substitutes are bought less"] --(#43;)--> C["Welfare"]
+A["Tariffs <br>"] --(-)--> B["Substitutes are bought less"] --(#43;)--> C["Welfare"]
 ```
 
 
