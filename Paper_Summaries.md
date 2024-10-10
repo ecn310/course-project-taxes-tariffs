@@ -52,7 +52,8 @@ A["Higher domestic consumption taxes in relation to trade taxes<br>"] --(+)--> B
 
 https://www.tandfonline.com/doi/full/10.1080/23311975.2023.2213959
 
-5. Karimi, Mohammad, et al. "The impact of trade liberalization on tax structure in developing countries." Procedia Economics and Finance 36 (2016): 274-282.
+5. M. Shahe Emran, Joseph E. Stiglitz, "On selective indirect tax reform in developing countries" Journal of Public Economics 599-623 (2005)
 
-https://www.sciencedirect.com/science/article/pii/S2212567116300387
+https://www.sciencedirect.com/science/article/pii/S0047272704000933
+
 
