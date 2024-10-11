@@ -1,12 +1,12 @@
 1. Michael, Michael S., Panos Hatzipanayotou, and Stephen M. Miller. "Integrated reforms of tariffs and consumption taxes." Journal of Public Economics 52.3 (1993): 417-428. 
 https://www.sciencedirect.com/science/article/pii/004727279390044T
-- Professor Ly suggested it.
-- **The big question(s) of the paper**:
-- 1. Will reducing tariffs  within an integrated tax structure enhance welfare in less-developed countries while maintaining government revenue?
-- 2. Will increasing consumption taxes within an integrated tax structure enhance welfare in less-developed countries while maintaining government revenue?
-- **Specific research question**: Given high tariffs, low consumption taxes, and the well-known relative inefficienticies of tariffs to consumption taxes, can we identify conditions under which the reduction of tariffs and increase in consumption taxes improve welfare while kepping government revenue constant?
-- **Theories**: When tariffs are reduced and consumption taxes increase, governments pay less foreign taxes and more domestic taxes, increasing welfare by driving up demand for substitute products. 
-- **Research Hypothesis**: When tariffs are reduced and consumption taxes increase, welfare increases when government revenue remains constant. 
+ - Professor Ly suggested it.
+ - **The big question(s) of the paper**:
+ - 1. Will reducing tariffs  within an integrated tax structure enhance welfare in less-developed countries while maintaining government revenue?
+ - 2. Will increasing consumption taxes within an integrated tax structure enhance welfare in less-developed countries while maintaining government revenue?
+ - **Specific research question**: Given high tariffs, low consumption taxes, and the well-known relative inefficienticies of tariffs to consumption taxes, can we identify conditions under which the reduction of tariffs and increase in consumption taxes improve welfare while kepping government revenue constant?
+ - **Theories**: When tariffs are reduced and consumption taxes increase, governments pay less foreign taxes and more domestic taxes, increasing welfare by driving up demand for substitute products. 
+ - **Research Hypothesis**: When tariffs are reduced and consumption taxes increase, welfare increases when government revenue remains constant. 
 
 ```mermaid
 flowchart LR
@@ -69,4 +69,18 @@ A["Trade Openness<br>"] --(+)--> B["Economic Growth"] --(#43;)--> C["Tax Revenue
 
 https://www.sciencedirect.com/science/article/pii/S0047272704000933
 
+-  **How I found this paper**: Google Scholar
+-  **Big picture question**: How do tax policy reforms in developing countries influence overall economic welfare, particulary when accounting for the role of the informal economy?
+- **Specific research question**: How does the presence of an informal economy impact the effectiveness of indirect tax reforms--specifically the reduction of trade taxes and the increase of VAT--on welfare in developing countries?
+- **Conceptual Framework/Theories**: Emphasizing the importance of considering the informal economy in tax policy analysis to avoid detrimental effects on welfare.
 
+  - reducing trade taxes while increasing VAT will enhance revenue in developing countries
+  - highlighting existing theoretical models' limitations when applied to real-world scenarios with informal economic activity
+- **Research Hypothesis**: The current approach of reducing trade tariffs while increasing VAT in developing countries may lead to a reduction in overall welfare, specifically when considering the informal economy and its impact on VAT coverage.
+
+ ```mermaid
+flowchart LR
+  A[(Trade_Tariffs)] --(-)---> B(welfare)
+  B --(-)--> C{informal economy in developing countries}
+  K(Value Added Tax) --(+)--> B
+```
