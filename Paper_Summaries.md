@@ -53,6 +53,18 @@ A["Ratio of consumption to trade taxes<br>"] --(+)--> B["Offset reductions"] --(
 
 https://www.tandfonline.com/doi/full/10.1080/23311975.2023.2213959
 
+-  **How I found this paper**: provided by Professor Ly
+-  **Big picture question**: How does tax revenue impact economic growth?
+- **Specific research question**: Do developing countries with accelerating economic growth benefit from increased tax revenue in the context of increasing trade openness?
+- **Conceptual Framework**: Used data from 29 developing countries experiencing accelerating economic growth from 2000-2020. Additionally, applied the Fixed Effect Model (FEM) and the Generalized Least Squares (GLS) estimation methods for panel data to test the proposed hypotheses.
+- **Research Hypothesis**: If trade openness in developing countries increases moderately, then tax revenue will positively affect general ecnomic growth because these developing countries will can regulate the macroeconomy and mobilize revenue.
+- **Theories**: When developing countries with accelerating economic growth have higher tax revenue, they will have increases economic growth which can be increased by a moderate increase in trade openness.
+
+```mermaid
+flowchart LR
+A["Trade Openness<br>"] --(+)--> B["Economic Growth"] --(#43;)--> C["Tax Revenue"]
+```
+
 5. M. Shahe Emran, Joseph E. Stiglitz, "On selective indirect tax reform in developing countries" Journal of Public Economics 599-623 (2005)
 
 https://www.sciencedirect.com/science/article/pii/S0047272704000933
