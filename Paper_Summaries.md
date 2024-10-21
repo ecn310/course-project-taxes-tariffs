@@ -39,13 +39,13 @@ https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1974850
 -  **Big picture question**: How do low-income countries pivot from trade taxes to domestic consumption taxes? 
 - **Specific research question**: How effective are transitions from trade taxes to domestic consumption taxes for low-income countries when its come to revenue?
 - **Conceptual Framework**: Used actual data on imported value, tariffs, and up to ten domestic taxes on more than 400,000 import transactions from Nepal to develop scenarios in which tariffs can be cut with the least impact on total revenue. Also used partial equilibrium models to produce estimates that assuage fears about the scale of loss of revenue and production.
-- **Research Hypothesis**: If low-income countries properly enforce domestic consumption taxes, then they will better offset reductions in comparison to their use of trade taxes because they will see a positive change in estimated revenue. 
-- **Theories**: When low-income countries have higher domestic consumption taxes in relation to trades taxes, they will minimize loss of revenue, since they are reducing expenses by paying less foreign taxes.  
+- **Research Hypothesis**: As the ratio of (properly-enforced) domestic taxes to tariffs increases, government revenue increases.
+- **Theories**: With higher domestic taxes, the economy has a more efficient revenue collection which has a broader tax base and less evasion so more money is collected thus leading to higher government revenue.
 
 
 ```mermaid
 flowchart LR
-A["Ratio of consumption to trade taxes<br>"] --(+)--> B["Offset reductions"] --(#43;)--> C["Revenue"]
+A["Ratio of (property-enforced) domestic taxes to tariffs<br>"] --(+)--> B["Tax Base"] --(+)--> C["Evasion"] --(-)--> D["Money Collected"] --(+)--> E["Government Revenue"]
 ```
 
 
