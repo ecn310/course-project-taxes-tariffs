@@ -19,6 +19,8 @@ We need to work on in the future:
 
 Final submission plan: 
 
+Question for group: is the table needed? I feel like we can add revisions later but most of the tasks are listed here. Please advise otherwise I will not add a table since we do not need it. 
+
 1. 11/01/2024 - Complete Stata do file and reproduciblity package - get feedback and adjust as nessecary - resubmit if nessecary 
 
 2. 11/05/2024 - Complete the first correlation tests - confirm what tests we must carry out and how to do so in Stata 
