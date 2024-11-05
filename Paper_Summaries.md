@@ -20,14 +20,14 @@ https://www.cambridge.org/core/journals/international-organization/article/taxat
 
 -  **How I found this paper**: provided by Professor Ly
 -  **Big picture question**: To research the implications of a connection that is widely acknowledged and rarely appreciated by exploring the nexus of tariffs and taxes.
-- **Specific research question**: Exploring how tariffs were instruments of advantage because they were the outcome of private benefits pursued to collective detriment.
+- **Specific research question**: Exploring how tariffs were instruments of advantage because they can be used as a tax.
 - **Conceptual Framework**: Firstly, develop a theory of taxation politics and apply it to the tariff. Then, submit the theory to an empirical test. Finally, from the extent of the treasury's dependence upon it and from the distributive pattern of its burdens and benefits, the article can make its conclusion.
-- **Research Hypothesis**: "Government Revenue dependence and distributive incidence account for several diverse aspects of American tariff policy, including the structure of its coalitions, the shifts in its objectives, and the timing of its innovations."
-- **Theories**: "Analysts grounded in the traditions of American politics credited tariff outcomes to domestic political pressures. On the other half, analysts attributed tariff policy to pursuits of national interest in an anarchic world economy."
+- **Research Hypothesis**: If government tariffs are used as a tax, then the country will benefit due to improvements in revenue dependence. 
+- **Theories**: The U.S. government used tariffs as their largest single source of federal government revenues up until World War I, showing its significance of tariffs as a tax and their effectiveness. 
 
 ```mermaid
 flowchart LR
-A["Tariff Rate <br>"] --(#43;)--> B["Government Revenue"] --(#43;)--> C["Tax"]
+A["Government Tariffs <br>"] --(#43;)--> B["Government Revenue"] --(#43;)--> C["Revenue Dependence"]
 ```
 
 
@@ -39,13 +39,13 @@ https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1974850
 -  **Big picture question**: How do low-income countries pivot from trade taxes to domestic consumption taxes? 
 - **Specific research question**: How effective are transitions from trade taxes to domestic consumption taxes for low-income countries when its come to revenue?
 - **Conceptual Framework**: Used actual data on imported value, tariffs, and up to ten domestic taxes on more than 400,000 import transactions from Nepal to develop scenarios in which tariffs can be cut with the least impact on total revenue. Also used partial equilibrium models to produce estimates that assuage fears about the scale of loss of revenue and production.
-- **Research Hypothesis**: If low-income countries properly enforce domestic consumption taxes, then they will better offset reductions in comparison to their use of trade taxes because they will see a positive change in estimated revenue. 
-- **Theories**: When low-income countries have higher domestic consumption taxes in relation to trades taxes, they will minimize loss of revenue, since they are reducing expenses by paying less foreign taxes.  
+- **Research Hypothesis**: As the ratio of (properly-enforced) domestic taxes to tariffs increases, government revenue increases.
+- **Theories**: With higher domestic taxes, the economy has a more efficient revenue collection which has a broader tax base and less evasion so more money is collected thus leading to higher government revenue.
 
 
 ```mermaid
 flowchart LR
-A["Ratio of consumption to trade taxes<br>"] --(+)--> B["Offset reductions"] --(#43;)--> C["Revenue"]
+A["Ratio of (property-enforced) domestic taxes to tariffs<br>"] --(+)--> B["Tax Base"] --(+)--> C["Evasion"] --(-)--> D["Money Collected"] --(+)--> E["Government Revenue"]
 ```
 
 
@@ -57,8 +57,8 @@ https://www.tandfonline.com/doi/full/10.1080/23311975.2023.2213959
 -  **Big picture question**: How does tax revenue impact economic growth?
 - **Specific research question**: Do developing countries with accelerating economic growth benefit from increased tax revenue in the context of increasing trade openness?
 - **Conceptual Framework**: Used data from 29 developing countries experiencing accelerating economic growth from 2000-2020. Additionally, applied the Fixed Effect Model (FEM) and the Generalized Least Squares (GLS) estimation methods for panel data to test the proposed hypotheses.
-- **Research Hypothesis**: If trade openness in developing countries increases moderately, then tax revenue will positively affect general ecnomic growth because these developing countries will can regulate the macroeconomy and mobilize revenue.
-- **Theories**: When developing countries with accelerating economic growth have higher tax revenue, they will have increases economic growth which can be increased by a moderate increase in trade openness.
+- **Research Hypothesis**: If trade openness in developing countries increases moderately, then tax revenue will positively affect general ecnomic growth.
+- **Theories**: When developing countries with accelerating economic growth have higher tax revenue, they will have increases economic growth because these developing countries can regulate the macroeconomy and mobilize revenue. This can be increased by a moderate increase in trade openness.
 
 ```mermaid
 flowchart LR
@@ -72,15 +72,12 @@ https://www.sciencedirect.com/science/article/pii/S0047272704000933
 -  **How I found this paper**: Google Scholar
 -  **Big picture question**: How do tax policy reforms in developing countries influence overall economic welfare, particulary when accounting for the role of the informal economy?
 - **Specific research question**: How does the presence of an informal economy impact the effectiveness of indirect tax reforms--specifically the reduction of trade taxes and the increase of VAT--on welfare in developing countries?
-- **Conceptual Framework/Theories**: Emphasizing the importance of considering the informal economy in tax policy analysis to avoid detrimental effects on welfare.
-
-  - reducing trade taxes while increasing VAT will enhance revenue in developing countries
-  - highlighting existing theoretical models' limitations when applied to real-world scenarios with informal economic activity
+- **Conceptual Framework/Theories**: Reducing trade taxes while increasing VAT will enhance revenue when ignoring the informal economy in developing countries. But, indirect tax policies will not have this affect in reality due to the affects of the informal economy, causing a reduce in welfare due to revenue-neutral selective reform.
 - **Research Hypothesis**: The current approach of reducing trade tariffs while increasing VAT in developing countries may lead to a reduction in overall welfare, specifically when considering the informal economy and its impact on VAT coverage.
 
  ```mermaid
 flowchart LR
-  A[(Trade_Tariffs)] --(-)---> B(welfare)
-  B --(-)--> C{informal economy in developing countries}
+  A[(Trade Tariffs)] --(-)---> B(revenue)
+  B --(-)--> C{welfare}
   K(Value Added Tax) --(+)--> B
 ```
