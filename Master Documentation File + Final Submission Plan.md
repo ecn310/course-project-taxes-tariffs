@@ -1,7 +1,20 @@
-Master Documentation File Last Updated: 10/31/2024
+Master Documentation File Last Updated: 11/7/2024
 
 What has been completed: 
 - Getting help from Prof. in order to help reshape the data 10/29/2024
+
+
+Issues (for keeping track of tasks and progress)
+- [Introduction Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/14): tasks related to the introduction section of our project
+- [Lit Review Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/13): working list of papers we have summarized
+- [References Bibliography](https://github.com/ecn310/course-project-taxes-tariffs/issues/12): working list of our citations with links
+- [Task Documentation Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/11): tasks related to documentation
+- [Overleaf Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/10): tasks related to altering our data.tex file
+- [Hypothesis Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/9): tasks related to updating our working hypothesis
+- [Data Use Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/6): tasks related to accessing and working on data 
+- [Daily Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/2): used to track task completion and daily activity
+
+
 
 We are currently working on:
 - Data reproducibility package Due: 11/01/2024
