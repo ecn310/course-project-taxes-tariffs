@@ -29,7 +29,7 @@ bookmarksopen=true,hyperfootnotes=false]{hyperref}
 \begin{document}
 \title{Taxes and Tariffs}
 % add a fourth name if you have four team members; fill in at least first names below
-\author{Dylan Thomas\thanks{Syracuse University, Economics Department. Email: } \and Kathryn Sarrge\thanks{abc} \and Umar Bilgrammi\thanks{abc}}
+\author{Dylan Thomas\thanks{Syracuse University, Economics Department. Email: economics@syr.edu } \and Kathryn Sarrge\thanks{} \and Umar Bilgrammi\thanks{}}
 \date{\vskip-.1in \today}
 \maketitle
 
@@ -41,74 +41,86 @@ Are national commodity tax rates (VAT or sales tax depending on the country) and
 
 \section{Data Overview} \label{sec:literature}
 
-Write a short description of each  data set. Use subsections as demonstrated below if you have more than one data set.
+We used to separate datasets from the World Integrated Trade Solutions website. The first dataset provides information on taxes on international trade while the second dataset gives us information on taxes on goods and services.
 
-\subsection{Data Set 1: Taxes on Goods and Services (current LCU)}
+\subsection{Data Set 1: Taxes on international trade}
 \begin{itemize}
-  \item Source: World Bank Group
-  \item How was it generated? Some possibilities: Did someone do a survey? Do people submit their own information? Did an organization compile it from public reports? 
-  \item What is the coverage of the data?
+  \item Source: World Integrated Trade Solution
+  \item International trade data from developing countries given as a percent of revenue. The data is reported on a per year basis.
+  \item 
     \begin{itemize}
-        \item What years?
-        \item What kind of observations (countries? individual survey respondents? etc)
-        \item Scope (e.g., if countries, only developed countries?)
+        \item 1988 - 2022
+        \item Observations on developing countries and how they have experienced different levels of tariffs on international trade based on the overall revenue of the country
     \end{itemize}
-  \item Number of variables
+  \item Variables
     \begin{itemize}
-        \item Types of variables,  (is this dataset giving mainly economic indicators for a country? Is it reporting details about 911 calls?
+        \item  Taxes on international trade (given as a percent of revenue)
     \end{itemize}
-  \item How many observations total? (e.g., 20 countries with 10 variables each, for a total of 100 observations)
+  \item 194 countries with one variable plus one variable for each of the statistical question
 \end{itemize}
 
-\subsection{Data Set 2 (insert a descriptive title)}
+\subsection{Data Set 2: Taxes on Goods and Services}
 
-Answer all the same questions as in the previous subsection. \\
+\begin{itemize}
+  \item Source: World Integrated Trade Solution
+  \item International tax data from developing countries given as a percent of revenue. The data is reported on a per year basis. 
+  \item 
+    \begin{itemize}
+        \item Years: 1988 - 2021
+        \item Observations on developing countries and how they have experienced different levels of taxes on goods and services based on the overall revenue of the country
+    \end{itemize}
+  \item Variables
+    \begin{itemize}
+        \item Taxes on Goods and Services (given as a percent of revenue)
+    \end{itemize}
+  \item 194 with one variable plus one variable per statistical question
+\end{itemize}
 
-\noindent Add additional subsections if you have more than two data sets.
-
+\noindent
 
 \section{Data Acquisition}
 \label{sec:theory}
 
-Explain how someone can acquire each dataset (you may need to use subsections again).
-\begin{itemize}
-    \item This should be in EXCRUCIATING detail: every click someone has to execute to get the dataset as you have it
-\end{itemize}
+The data sets can be acquired through from the World Integrated Trade Solution website. To get the data, we altered the indicator on the website allowing us to get our two different data sets. Specifically, we used the indicators Taxes on Goods and Services (percent of revenue) and Taxes on international trade (percent of revenue). We downloaded these datasets by clicking the download button on the table view tab located on the right hand side above the data. The data is currently being stored in an issue named Data Use Log in our repository. Once in the repo, navigate to the issues in the top left bar of the website. Click on issues and access the top issue which reads Data Log. The second post in the issues section which is titled 10/10/2024, that reads Links for 2 data sets has the data. Data set 1 correlates to the first link and Data set 2 correlates to the second link.
 
-\noindent Where have YOU stored the data? Include link(s).
+\noindent
 \begin{itemize}
-    \item Example of how to make a url into an explicit link: \url{https://github.com/ecn310/course-project-zipcentercrime/tree/main/ArcGIS%20files}
-    \item Example of how to make a piece of text into a hyperlink: \href{https://github.com/ecn310/course-project-zipcentercrime/tree/main/ArcGIS%20files}{ArcGIS files}
-    \item If your code and documentation is in a different location, where is it?
+
+    \item \href{https://github.com/ecn310/course-project-taxes-tariffs/issues/6}{Taxes and Tariffs Data Repo}
 \end{itemize}
 
 
 \section{Data Manipulation}
 \label{sec:data}
 
-What steps have you taken / do you plan to take to get the data ready for analysis? 
 \begin{itemize}
-    \item Examples: checking for outliers; dropping some observations you don't need; investigating something you've already noticed that doesn't make sense.
-    \item If you've already done some work, where are the files and documentation for that work?
+    \item The data manipulation will take place in Stata. Initially, we imported the data for international trade and taxes on goods and services separately into stata, converting them from wide to long. Our data is now in the correct format of long, and we are working on combining these two datasets to allow for statistical analysis of the data.
+    \item File Documentation: All file documentation will occur in an issue named Data Use Log in our repository. Any time the data is altered, it will be listed there as to what we have done and when we did it.
 \end{itemize}
 
 \section{Linking Datasets}
 \label{sec:discussion}
 
-How you will link different data sets together (if you'll need to)
 \begin{itemize}
-    \item What variable(s) in each dataset will you use to merge the datasets together?
-    \item Example: We will merge Dataset A with GDP for each country with Dataset B that has manufacturing employment for each country across years. In Dataset A, these variables are called \textit{year} and \emph{country}; Dataset B calls the year variable \emph{yr} and the country variable \emph{name}.
-\end{itemize}
+    \item \href{https://wits.worldbank.org/CountryProfile/en/Country/BY-COUNTRY/StartYear/1988/EndYear/2022/Indicator/GC-TAX-INTT-RV-ZS}{Data Set 1 Link}
 
+ \item \href{https://wits.worldbank.org/CountryProfile/en/country/by-country/startyear/LTST/endyear/LTST/indicator/GC-TAX-GSRV-RV-ZS}{Data Set 2 Link}
+\end{itemize}
 
 \section{Key Variables}
 \label{sec:result}
 
-List of key variables you may use for testing your hypothesis, separately for each dataset
-
-
-
-
-
+Data Set 1: 
+\begin{itemize}
+ \item Tax on Int'l Trade percent of revenue (continuous and ratio)
+\end{itemize}
+Data Set 2: 
+\begin{itemize}
+    \item Tax on G and S percent of Revenue (continuous and ratio)
+\end{itemize}
+\section{Hypothesis}
+\begin{itemize}
+    \item Working Hypothesis: (in developing countries) If domestic tax revenue increases then tariff revenue decreases
+    \item Null Hypothesis: There is no correlation between domestic tax revenue and tariff revenue (at a country level)
+\end{itemize}
 \end{document}
