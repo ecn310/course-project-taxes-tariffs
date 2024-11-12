@@ -26,7 +26,7 @@ This MDF is used as a place to store and keep track of important information. In
 - [VAT reshaped from wide to long data sheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/5/24)
 - [International excel sheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/464ab411acff92f4e57ef87689d7cf7acf1de296) (10/25/24)
 - [International reshaped from wide to long datasheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/04/24)
-- 
+  
 
 **Do Files**
 - [data.do](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/04/24)
@@ -38,4 +38,4 @@ This MDF is used as a place to store and keep track of important information. In
 - [VAT - second half](https://github.com/ecn310/course-project-taxes-tariffs/commit/9ca07d5e1833d78ec8658ed3b542bdc39512a84e) (11/08/24)
 
 **Project Report and Presentation**
-- [Overleaf/data.tec](https://github.com/ecn310/course-project-taxes-tariffs/commit/d547e02b39f881081f3e430e7d270678faf70f97) (11/08/24)
+- [data.tex](https://github.com/ecn310/course-project-taxes-tariffs/commit/1f9b8c12905b83bf3e0fbe2ef6b2bdea96dafd37) (11/12/24)
