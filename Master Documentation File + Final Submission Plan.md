@@ -2,15 +2,7 @@
 
 This MDF is used as a place to store and keep track of important information. In particular, this page provides links to where everything is kept.
 
-**Issues (for keeping track of tasks and progress)**
-- [Introduction Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/14): tasks related to the introduction section of our project
-- [Lit Review Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/13): working list of papers we have summarized
-- [References Bibliography](https://github.com/ecn310/course-project-taxes-tariffs/issues/12): working list of our citations with links
-- [Task Documentation Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/11): tasks related to documentation
-- [Overleaf Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/10): tasks related to altering our data.tex file
-- [Hypothesis Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/9): tasks related to updating our working hypothesis
-- [Data Use Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/6): tasks related to accessing and working on data 
-- [Daily Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/2): used to track task completion and daily activity
+[**Issues (for keeping track of tasks and progress)**](https://github.com/ecn310/course-project-taxes-tariffs/issues)
 
 **General Project Files**
 - [Team Contract](https://github.com/ecn310/course-project-taxes-tariffs/commit/573116106536af54f7cdf3c9edcc4cb4ace205ec) (09/16/24)
@@ -26,16 +18,16 @@ This MDF is used as a place to store and keep track of important information. In
 - [VAT reshaped from wide to long data sheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/5/24)
 - [International excel sheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/464ab411acff92f4e57ef87689d7cf7acf1de296) (10/25/24)
 - [International reshaped from wide to long datasheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/04/24)
-- 
+  
 
 **Do Files**
 - [data.do](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/04/24)
 - [reshapeddata.do](https://github.com/ecn310/course-project-taxes-tariffs/commit/61a608c42df1dbc2b82312aca8b4993164ef493d) (11/08/24)
 
 **Histograms**
-- [International Data](https://github.com/ecn310/course-project-taxes-tariffs/commit/a52bb0eeafbf182f9a6a609fd6bec02c99cc98e2) (11/08/24)
+- [International Data](https://github.com/ecn310/course-project-taxes-tariffs/commit/d931c31e6ff4146e27a0ef636c12e57cc7cdeeb2) (11/08/24)
 - [VAT - first half](https://github.com/ecn310/course-project-taxes-tariffs/commit/9ca07d5e1833d78ec8658ed3b542bdc39512a84e) (11/08/24)
 - [VAT - second half](https://github.com/ecn310/course-project-taxes-tariffs/commit/9ca07d5e1833d78ec8658ed3b542bdc39512a84e) (11/08/24)
 
 **Project Report and Presentation**
-- [Overleaf/data.tec](https://github.com/ecn310/course-project-taxes-tariffs/commit/d547e02b39f881081f3e430e7d270678faf70f97) (11/08/24)
+- [data.tex](https://github.com/ecn310/course-project-taxes-tariffs/commit/1f9b8c12905b83bf3e0fbe2ef6b2bdea96dafd37) (11/12/24)
