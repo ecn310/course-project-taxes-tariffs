@@ -13,10 +13,12 @@ This MDF is used as a place to store and keep track of important information. In
 - [Research Hypothesis Workshop](https://github.com/ecn310/exercises/discussions/9) (10/15/24, revised 10/17/24)
 - [Literature Review Assignment](https://github.com/ecn310/course-project-taxes-tariffs/commit/16153f270d9c6cc567da6c62e6b3c3319a7c1b23): Paper Summaries 1-5 plus casual diagrams (10/17/24)
 
-**Data**
+**Raw Data**
 - [VAT excel data sheets](https://github.com/ecn310/course-project-taxes-tariffs/commit/464ab411acff92f4e57ef87689d7cf7acf1de296) (10/24/24)
-- [VAT reshaped from wide to long data sheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/5/24)
 - [International excel sheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/464ab411acff92f4e57ef87689d7cf7acf1de296) (10/25/24)
+
+**Reshaped Data**
+- [VAT reshaped from wide to long data sheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/5/24)
 - [International reshaped from wide to long datasheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/04/24)
   
 
