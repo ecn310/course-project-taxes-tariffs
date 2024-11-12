@@ -1,38 +1,41 @@
-Master Documentation File Last Updated: 10/31/2024
+**Master Documentation File Last Updated: 11/8/2024**
 
-What has been completed: 
-- Getting help from Prof. in order to help reshape the data 10/29/2024
+This MDF is used as a place to store and keep track of important information. In particular, this page provides links to where everything is kept.
 
-We are currently working on:
-- Data reproducibility package Due: 11/01/2024
-- Data.tex update to reflect new variables and if the variables are nominal or conditional Due: 11/01/2024
-- Final submission plan Due: 11/01/2024
+**Issues (for keeping track of tasks and progress)**
+- [Introduction Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/14): tasks related to the introduction section of our project
+- [Lit Review Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/13): working list of papers we have summarized
+- [References Bibliography](https://github.com/ecn310/course-project-taxes-tariffs/issues/12): working list of our citations with links
+- [Task Documentation Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/11): tasks related to documentation
+- [Overleaf Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/10): tasks related to altering our data.tex file
+- [Hypothesis Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/9): tasks related to updating our working hypothesis
+- [Data Use Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/6): tasks related to accessing and working on data 
+- [Daily Log](https://github.com/ecn310/course-project-taxes-tariffs/issues/2): used to track task completion and daily activity
 
-We need to work on in the future:
-1. Run correlations, hypothesis tests, etc. ; confirm “story”
-2. Write Results, Discussion sections
-3. Write Theory / Hypothesis
-4. Finalize Replication Package / Data Appendix
-5. Expand and finalize Lit Review, References
-6. Finalize Intro and Conclusion
-7. Write Abstract
+**General Project Files**
+- [Team Contract](https://github.com/ecn310/course-project-taxes-tariffs/commit/573116106536af54f7cdf3c9edcc4cb4ace205ec) (09/16/24)
+- [Information from Professor Ly](https://github.com/ecn310/course-project-taxes-tariffs/discussions/3): details on overall project, links to research papers and data (09/17/24)
+- [Project Template](https://github.com/ecn310/course-project-taxes-tariffs/commit/8ea0d8f8fa678f77800c9494918ecb0e3fbd8019): report and data templates (10/02/24)
 
-Final submission plan: 
+**Prep Work for Research Project**
+- [Research Hypothesis Workshop](https://github.com/ecn310/exercises/discussions/9) (10/15/24, revised 10/17/24)
+- [Literature Review Assignment](https://github.com/ecn310/course-project-taxes-tariffs/commit/16153f270d9c6cc567da6c62e6b3c3319a7c1b23): Paper Summaries 1-5 plus casual diagrams (10/17/24)
 
-Question for group: is the table needed? I feel like we can add revisions later but most of the tasks are listed here. Please advise otherwise I will not add a table since we do not need it. 
+**Data**
+- [VAT excel data sheets](https://github.com/ecn310/course-project-taxes-tariffs/commit/464ab411acff92f4e57ef87689d7cf7acf1de296) (10/24/24)
+- [VAT reshaped from wide to long data sheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/5/24)
+- [International excel sheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/464ab411acff92f4e57ef87689d7cf7acf1de296) (10/25/24)
+- [International reshaped from wide to long datasheet](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/04/24)
+- 
 
-1. 11/01/2024 - Complete Stata do file and reproduciblity package - get feedback and adjust as nessecary - resubmit if nessecary 
+**Do Files**
+- [data.do](https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4) (11/04/24)
+- [reshapeddata.do](https://github.com/ecn310/course-project-taxes-tariffs/commit/61a608c42df1dbc2b82312aca8b4993164ef493d) (11/08/24)
 
-2. 11/05/2024 - Complete the first correlation tests - confirm what tests we must carry out and how to do so in Stata 
+**Histograms**
+- [International Data](https://github.com/ecn310/course-project-taxes-tariffs/commit/a52bb0eeafbf182f9a6a609fd6bec02c99cc98e2) (11/08/24)
+- [VAT - first half](https://github.com/ecn310/course-project-taxes-tariffs/commit/9ca07d5e1833d78ec8658ed3b542bdc39512a84e) (11/08/24)
+- [VAT - second half](https://github.com/ecn310/course-project-taxes-tariffs/commit/9ca07d5e1833d78ec8658ed3b542bdc39512a84e) (11/08/24)
 
-3. 11/07/2024 - Create a discussion which explains our results and if they confirm our hypothesis 
-
-Items 2 and 3 have a flexible deadline because we may need feedback or may make errors which will require the help of Professor Buzard 
-
-4. 11/07/2024 - Write hypothesis and clear why theory (hard deadline) 
-
-5. 11/14/2024 - Expand and finalize lit review to incorporate 10 sources; it has to be done by this date but we can add sources anytime before this date --> keep Lit review Log updated 
-
-6. 11/21/2024 - Finalize intro and conclusion --> create a intro and conclusion log (they do not need to be seperate) 
-
-7. 11/22/2024 - 12/16/2024 - Write abstract --> create a detailed log for things that need to be completed on the abstract titled "abstract log" 
+**Project Report and Presentation**
+- [Overleaf/data.tec](https://github.com/ecn310/course-project-taxes-tariffs/commit/d547e02b39f881081f3e430e7d270678faf70f97) (11/08/24)
