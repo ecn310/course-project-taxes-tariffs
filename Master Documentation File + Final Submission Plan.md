@@ -33,3 +33,8 @@ This MDF is used as a place to store and keep track of important information. In
 
 **Project Report and Presentation**
 - [data.tex](https://github.com/ecn310/course-project-taxes-tariffs/commit/1f9b8c12905b83bf3e0fbe2ef6b2bdea96dafd37) (11/12/24)
+
+**Project Template**
+- [project template](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/project_template.tex)
+  (11/16/24)
+
