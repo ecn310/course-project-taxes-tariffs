@@ -33,8 +33,8 @@ bookmarksopen=true,hyperfootnotes=false]{hyperref}
 
 
 \begin{document}
-\title{Insert title here}
-\author{Name 1\thanks{Syracuse University, Economics Department. Email: kbuzard@syr.edu.} \and Name 2\thanks{abc} \and Name 3\thanks{abc}}
+\title{Taxes and Tariffs}
+\author{Kathryn Sarrge\thanks{Syracuse University, Economics Department. Email: kbuzard@syr.edu.} \and Dylan Thomas\thanks{abc} \and Umar Bilgrammi\thanks{abc}}
 \date{\vskip-.1in \today}
 \maketitle
 
@@ -72,14 +72,38 @@ Optional--may include in intro if it's short.
 \section{Data}
 \label{sec:data}
 
-Describe your data. Where you got it from, how it was generated, what variables you'll use, what data cleaning steps you had to take, where your processed data, code and documentation is stored.
-
-In a published paper, a lot of this detail will be in a data appendix. For the purposes of this report, include it all here (this may be the longest section of your report).
+Our data consists of two time series datasets that are both provided by the World Integrated Trade Solution website. Both of these datasets provide information in terms of percent of revenue from 1988 to 2022, giving us a 34 years of data to look at from both datasets. The datasets give observations on developing countries and how they have experienced different levels of tariffs on international trade or taxes on goods and services based on the overall revenue of the country. Additionally, both of these datasets have 194 countries, allowing us to combine these datasets easier. The data sets can be acquired through from the \href{https://wits.worldbank.org/CountryProfile/en/Country/BY-COUNTRY/StartYear/1988/EndYear/2022/Indicator/GC-TAX-GSRV-VA-ZS}{World Integrated Trade Solution}  website. To get the data, we altered the indicator on the website allowing us to get our two different data sets. Specifically, we used the indicators Taxes on Goods and Services (percent of revenue) and Taxes on international trade (percent of revenue). We downloaded these datasets by clicking the download button on the table view tab located on the right hand side above the data. In terms of differentiating our two datasets, one focuses on International tax data from developing countries given as a percent of revenue and the other is about international trade data from developing countries given as a percent of revenue. Both these datasets provide data on a per year basis. Since these datasets only have one variable plus one variable per statistical question, these will be the two variables we examine when conducting our analysis. As our data originated in excel, we had to export the data into Stata to clean and transform our data. Firstly we converted our datasets from wide to long individually in Stata and renamed our variables, allowing for easier use of the data and proper formatting. We then combined these datasets using the merge command, creating our \href{https://github.com/ecn310/course-project-taxes-tariffs/blob/main/merged.dta}{merge.dta} file which is our data in it's correct format. In terms of cleaning our data, most data points contained actual observations, therefore we did not need to remove any data point from our dataset. All file documentation will occur in an issue named \href{https://github.com/ecn310/course-project-taxes-tariffs/issues/6}{Data Use Log} in our repository. We also have saved .do files of the data after converting each of them from wide to long name \href{https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4}{vat data} and \href{https://github.com/ecn310/course-project-taxes-tariffs/commit/cc891cfec48f11c6a0b9c1aeb2ae980147232ff4}{international data}. Additionally, you the links to access our data are named \href{https://wits.worldbank.org/CountryProfile/en/Country/BY-COUNTRY/StartYear/1988/EndYear/2022/Indicator/GC-TAX-INTT-RV-ZS}{International tax link} and \href{https://wits.worldbank.org/CountryProfile/en/country/by-country/startyear/LTST/endyear/LTST/indicator/GC-TAX-GSRV-RV-ZS}{Taxes on goods and services link}. Our raw data is stored as excel spreadsheets and are named \href{https://github.com/ecn310/course-project-taxes-tariffs/blob/main/VATdatasheet.xlsx}{VATdatasheet.xlsx} and \href{https://github.com/ecn310/course-project-taxes-tariffs/blob/main/internationaltaxdatasheet.xlsx}{internationaltaxdatasheet.xlsx}
 
 \subsection{Survey data}
 
 \section{Results}
 \label{sec:result}
+
+We have conducted three separate analysis on our final data, all done in Stata. The first analysis we conducted 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{mergedscatter.png}
+    \caption{Merged Data Scatter Plot}
+    \label{fig:enter-label}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{mergedbar.png}
+    \caption{Merged Data Mean Bar Graph}
+    \label{fig:enter-label}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{.github/mergedhistogram.png}
+    \caption{Merged Data Histogram}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
 
 Explain what analyses you did, provide evidence (like in the descriptive stats exercise, but refined and clear) and then explain what your results mean.
 
