@@ -38,3 +38,6 @@ This MDF is used as a place to store and keep track of important information. In
 - [project template](https://www.overleaf.com/project/66fdd3a10a7eff5a6a8c7ef7)
   (11/16/24)
 
+**Reproducibility Package**
+  - [Reproducibility Package Plan](https://github.com/ecn310/course-project-taxes-tariffs/discussions/20#discussioncomment-11331651) (11/20/24)
+
