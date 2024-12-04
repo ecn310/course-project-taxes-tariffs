@@ -1,4 +1,4 @@
-**Master Documentation File Last Updated: 11/8/2024**
+**Master Documentation File (MDF)**
 
 This MDF is used as a place to store and keep track of important information. In particular, this page provides links to where everything is kept.
 
