@@ -1,0 +1,3 @@
+use "C:\Users\dthoma26\OneDrive - Syracuse University\Documents\GitHub\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\sortedultimatemerge.dta"
+drop if international < -5
+twoway (scatter international vat, title("Scatterplot of international vs consumption tax") legend(off) ytitle(international (percent of revenue)) xtitle(consumption tax (percent of revenue)) yscale(range(-5 60)) mcolor(forest_green) msize(medsmall) msymbol(triangle_hollow)) lfit international vat
