@@ -45,7 +45,7 @@ The provided code reproduces all the tables and figures in the paper.
 
 | Exhibit | Input dataset | Program | Outputs |
 |---------|---------------|---------|---------|
-|  |  | remove china and final scatterplot with cons int.do | Scatterplotintvscons.png |
+| Figure 1 |  | remove china and final scatterplot with cons int.do | Scatterplotintvscons.png |
 |  |  | twowaydevelopedhistintcons.do | twowayhistdevelopedintcons.png |
 |  |  | twowaydevelopinghistintcons.do | twowayhistdevelopingintcons.png |
 |  |  | twowayhistintcons.do | twowayhistintcons.png |
