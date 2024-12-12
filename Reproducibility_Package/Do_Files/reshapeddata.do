@@ -20,3 +20,4 @@ reshape long yr, i(id) j(year)
 
 rename yr international
 
+drop if international < -5
