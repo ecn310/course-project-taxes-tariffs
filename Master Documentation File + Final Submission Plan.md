@@ -1,4 +1,4 @@
-**Master Documentation File Last Updated: 11/8/2024**
+**Master Documentation File (MDF)**
 
 This MDF is used as a place to store and keep track of important information. In particular, this page provides links to where everything is kept.
 
@@ -7,7 +7,7 @@ This MDF is used as a place to store and keep track of important information. In
 **General Project Files**
 - [Team Contract](https://github.com/ecn310/course-project-taxes-tariffs/commit/573116106536af54f7cdf3c9edcc4cb4ace205ec) (09/16/24)
 - [Information from Professor Ly](https://github.com/ecn310/course-project-taxes-tariffs/discussions/3): details on overall project, links to research papers and data (09/17/24)
-- [Project Template](https://github.com/ecn310/course-project-taxes-tariffs/commit/8ea0d8f8fa678f77800c9494918ecb0e3fbd8019): report and data templates (10/02/24)
+- [Project Template](https://github.com/ecn310/course-project-taxes-tariffs/commit/2cb4fdf1fc083f1f0f5ccb9329517bfea36949ea)
 
 **Prep Work for Research Project**
 - [Research Hypothesis Workshop](https://github.com/ecn310/exercises/discussions/9) (10/15/24, revised 10/17/24)
@@ -32,10 +32,7 @@ This MDF is used as a place to store and keep track of important information. In
 - [VAT - second half](https://github.com/ecn310/course-project-taxes-tariffs/commit/9ca07d5e1833d78ec8658ed3b542bdc39512a84e) (11/08/24)
 
 **Project Report and Presentation**
-- [data.tex](https://github.com/ecn310/course-project-taxes-tariffs/commit/1f9b8c12905b83bf3e0fbe2ef6b2bdea96dafd37) (11/12/24)
-
-**Project Template**
-- [project template](https://www.overleaf.com/project/66fdd3a10a7eff5a6a8c7ef7)
+- [Taxes and Tariffs Report](https://github.com/ecn310/course-project-taxes-tariffs/commit/bf1d5ab091e214c71552e2f5e04642a3ddf49f35)
   (11/16/24)
 
 **Reproducibility Package**
