@@ -1,8 +1,8 @@
+*gdpdata.do \\ importing excel GDP data and reshaping it into a long dataset
 
-*gdpdata.do
+cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files"
 
-import excel "C:\Users\ujbilgra\OneDrive - Syracuse University\Documents\GitHub\course-project-taxes-tariffs\GDPdatasetedited.xlsx", sheet("Country-Timeseries") 
-
+import excel "GDPdataset.xlsx", sheet("Country-Timeseries")
 
 local year = 1988
 
@@ -10,8 +10,6 @@ foreach var of varlist C-AK {  // Adjust if more variables exist
     rename `var' yr`year'
     local year = `year' + 1
 }
-
-
 
 rename A CountryName
 rename B IndicatorName
@@ -24,34 +22,43 @@ reshape long yr, i(id) j(year)
  
 rename yr gdp
 
-save "C:\Users\ujbilgra\OneDrive - Syracuse University\Documents\GitHub\course-project-taxes-tariffs\gdpdata.dta"
+cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
 
-*reshapeddata.do
+save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\gpddata" , replace 
 
-*added yr to each year on both of the data sheets that way stata registers years as a variable allowing for reshaping of the data sets from wide to long 
- import excel "C:\Users\ujbilgra\OneDrive - Syracuse University\VATdatasheet.xlsx", sheet("Country-Timeseries") firstrow
-(37 vars, 193 obs)
 
- gen id = _n
- 
- . reshape long yr, i(id) j(year)
- 
-  rename yr vat
-  
-  clear
-  
-   import excel "C:\Users\ujbilgra\OneDrive - Syracuse University\internationaltaxdatasheet.xlsx", sheet("Cou
-> ntry-Timeseries") firstrow
+*internationaltaxnew.do \\ importing excel international data and reshaping it into a long dataset
+
+cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files"
+
+import excel "intaxedited", sheet("Country-Timeseries")
+
+
+local year = 1988
+
+foreach var of varlist C-AK {  // Adjust if more variables exist
+    rename `var' yr`year'
+    local year = `year' + 1
+}
+
+rename A CountryName
+rename B IndicatorName
+
+drop in 1
 
 gen id = _n
-
+ 
 reshape long yr, i(id) j(year)
 
-rename yr international
+rename yr internationaltax
 
-drop if international < -5
+drop id
 
-clear
+cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
+
+save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\internationaltax", replace
+
+
 
 *data.do
 
