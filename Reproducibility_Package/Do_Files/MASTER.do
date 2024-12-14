@@ -26,7 +26,9 @@ drop id
 
 cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
 
-save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\gpddata" , replace 
+save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\gdpdata" , replace 
+
+clear
 
 
 *internationaltaxnew.do \\ importing excel international data and reshaping it into a long dataset
@@ -52,7 +54,7 @@ gen id = _n
  
 reshape long yr, i(id) j(year)
 
-rename yr internationaltax
+rename yr international
 
 drop id
 
@@ -60,6 +62,7 @@ cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxe
 
 save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\internationaltax", replace
 
+clear
 *consumptiontax.do
 
 cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files"
@@ -82,7 +85,7 @@ gen id = _n
  
 reshape long yr, i(id) j(year)
 
-rename yr consumptiontax
+rename yr consumption
 
 drop id
 
@@ -90,57 +93,35 @@ cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxe
 
 save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\consumptiontaxreproducible", replace
 
-*data.do
-
-import excel "C:\Users\ujbilgra\OneDrive - Syracuse University\Stata Data\VATdatasheet.xlsx", sheet("Country-Timeseries")
-
-codebook
-
-tabulate C
-
 clear
-
-import excel "C:\Users\ujbilgra\OneDrive - Syracuse University\Stata Data\internationaltaxdatasheet.xlsx", sheet("Country-Timeseries") firstrow allstring
-
-codebook
-
-tabulate D
-
-tabulate E
-
-tabulate CountryName
 
 *mergeddatasets.do
 
-use "C:\Users\ujbilgra\OneDrive - Syracuse University\Documents\GitHub\course-project-taxes-tariffs\vatf.dta" 
+cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
 
-merge 1:1 CountryName year using intf.dta
+use consumptiontaxreproducible
 
-pwcorr international vat
+merge 1:1 CountryName year using internationaltax
 
- twoway (histogram vat, color(blue%50)) (histogram international, color(red%50))
- 
- scatter international vat
- 
-  graph bar international vat
-  
-mean vat
+drop _merge 
 
-mean international
+save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\merged", replace 
+
+clear
 
 *sortedultimatemergere.do
 
-use "C:\Users\ujbilgra\OneDrive - Syracuse University\Documents\merged.dta"
+cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
 
-describe using gdp.dta
+use merged 
 
-merge 1:1 CountryName year using gdp.dta
+describe using gdpreproducible
 
-drop _merge
+merge 1:1 CountryName year using gdpreproducible
 
 sort gdp
 
-gen id = .
+drop _merge
 
 replace id = 1 if gdp > 12000
 
@@ -148,7 +129,12 @@ replace id = 2 if gdp < 12000
 
 drop if international < -5
 
-save "C:\Users\ujbilgra\OneDrive - Syracuse University\Documents\sortedultimatemergeredo.dta"
+
+save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\sortedultimatemerge", replace
+
+clear
+
+****THIS IS WHERE THE MASTER DO STOPS WORKING
 
 *datapnggeneration.do
 
