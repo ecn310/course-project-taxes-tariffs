@@ -35,7 +35,7 @@ clear
 
 cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files"
 
-import excel "intaxedited", sheet("Country-Timeseries")
+import excel "internationaldataset", sheet("Country-Timeseries")
 
 
 local year = 1988
@@ -67,7 +67,7 @@ clear
 
 cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files"
 
-import excel "VATdatasheetreproducible", sheet("Country-Timeseries")
+import excel "consumptiondataset", sheet("Country-Timeseries")
 
 local year = 1988
 
