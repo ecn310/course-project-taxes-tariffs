@@ -22,14 +22,20 @@ The datasets for source can be found in our [Data_Files](Reproducibility_Package
 - consumptiontaxreproducible
 - gdpdata
 
+### Datasets
+
+[internationaltax.dta](Reproducibility_Package/Data_Files/internationaltax.dta): describes the international tax variable in terms of how much percent of revenue tariffs make up in the given country
+
+[consumptiontaxreproducible.dta](Reproducibility_Package/Data_Files/consumptiontaxreproducible.dta): describes the consumption tax variable in terms of how much percent of revenue it makes up in the given country
+
+[gdpdata.dta](Reproducibility_Package/Data_Files/gdpdata.dta): this dataset is gdp per capita for countries in terms of current US dollars used to sort and organize countries into developing and developed
 
 ## List of analysis codes and outputs
 The provided code reproduces all the tables and figures in the paper.
 
 | Exhibit | Input dataset | Program | Outputs |
 |---------|---------------|---------|---------|
-| Figure 1 |  | remove china and final scatterplot with cons int.do | Scatterplotintvscons.png |
-|  |  | twowaydevelopedhistintcons.do | twowayhistdevelopedintcons.png |
-|  |  | twowaydevelopinghistintcons.do | twowayhistdevelopingintcons.png |
-|  |  | twowayhistintcons.do | twowayhistintcons.png |
-|  |  |  |  |
+| Figure 1 | sortedultimatemerge.dta | scatterplotconvsint.do | Scatterplotintvscons.png |
+| Figure 4 | sortedultimatemerge.dta | twowaydevelopedhistintcons.do | twowayhistdevelopedintcons.png |
+| Figure 3 | sortedultimatemerge.dta | twowaydevelopinghistintcons.do | twowayhistdevelopingintcons.png |
+| Figure 2 | sortedultimatemerge.dta | twowayhistintcons.do | twowayhistintcons.png |
