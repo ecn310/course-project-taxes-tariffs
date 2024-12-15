@@ -16,6 +16,7 @@
 \usepackage[american]{babel}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{graphicx,amsbsy,amssymb, amsmath, amsthm, MnSymbol,bbding,times, verbatim,bm,pifont,pdfsync,setspace,natbib}
+\usepackage{float}
 
 % enable hyperlinks and table of contents
 \usepackage[pdftex,
@@ -42,7 +43,7 @@ bookmarksopen=true,hyperfootnotes=false]{hyperref}
 \begin{center} {\bf Abstract} \end{center}
 
 \begin{quote}
-{\small Insert abstract text here: 75-200 words, very high-level summary of your project.}
+{\small This study investigates the relationship between consumption taxes such as Value Added Tax (VAT) and international tax in developing and developed countries, with the aim of understanding the evolving fiscal strategies employed in response to global economic integration. Specifically, we explore whether there exists an inverse relationship between consumption tax and tariff revenue, hypothesizing that as consumption taxes like VAT increases, tariff revenue decreases. Additionally, we used gross domestic product (GDP) in current U.S. dollars to identify what countries are considered developed and developing. Utilizing data from the World Integrated Trade Solution (WITS) database, covering 194 countries from 1988 to 2022, we analyze the two forms of taxation as a percentage of government revenue and consider their implications for economic development. Our findings reveal a moderate negative correlation between VAT and tariff revenue, with a correlation coefficient of -0.3255, indicating that as countries shift towards consumption-based taxes like VAT, their reliance on tariffs decreases. This trend is particularly notable in developing countries, where tariffs historically constituted a larger share of revenue. The paper discusses these findings within the context of broader tax reform literature, highlighting the potential benefits of shifting from trade taxes to consumption taxes.}
 \end{quote}
 
 \bigskip
@@ -104,10 +105,17 @@ The main variables used in our data are taxes on goods and services, taxes on in
 
 The summary statistics for the three variables- taxes on goods and services, taxes on international trade—are presented in the table below. This table provides an overview of the mean, standard deviation, minimum, and maximum values for these variables across all countries and years in the dataset.
 
-
-
 These statistics reflect the general range of taxes and tariffs as a percentage of government revenue. It is important to note that these figures represent averages across developing and developed countries, with significant variation between individual countries.
 
+\subsection{Survey data} 
+
+
+\section{Results}
+\label{sec:result}
+
+In this section, we present the analysis of the relationship between taxes on consumption (specifically VAT) and taxes on international trade (tariffs) in developing countries, using the data collected from the World Integrated Trade Solution database. Our primary focus is to investigate the potential inverse relationship between VAT revenue and tariff revenue, and to understand the trends over time. We will first look at descriptive statistics, followed by graphical evidence, and then analyze time-series trends and correlations. 
+
+Table 1 provides summary statistics for our three key variables: international tax, consumption tax, and Gross Domestic Product (GDP). Both international tax and consumption tax are expressed as percentages of total revenue, while GDP is measured in current U.S. dollars. The mean for both international tax and consumption tax is strikingly similar, at approximately 10.24 percent and 10.26 percent, respectively. However, there are notable differences in their distributions.
 
 {
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
@@ -123,40 +131,66 @@ consumption &        3211&    10.25779&    5.280867&    .0329885&    40.00499\\
 \end{tabular}
 }
 
+Table 1 provides summary statistics for our three variables: international tax, consumption tax, and gross domestic product, with international and consumption tax in terms of percent of revenue and gross domestic production in terms of current U.S. dollars. The means for both international tax and consumption tax are extremely similar while the standard deviation for international tax is nearly double of consumption tax, meaning there are substantial differences in how these variables differ from their means.
 
-\subsection{Survey data} 
+International tax has a maximum of 64.66 percent, while consumption tax only has a maximum of 40.00 percent, indicating that international taxes can make up a larger portion of revenue in some countries, especially those with extreme tariff rates. Additionally, international tax has a higher standard deviation (11.61 percent) compared to consumption tax (5.28 percent), which suggests that international tax revenue is more volatile across countries.
 
+The pairwise correlation coefficient test between the international tax and the consumption tax is -.3255. Therefore, these variables have a moderate strength negative correlation. This shows that there is a statistically significant negative relationship between tariffs and consumption taxes in developing and developed countries. Thus, we reject the null hypothesis that there is no relationship between these two variables. 
 
-\section{Results}
-\label{sec:result}
+A graphical visualization of the whole data is best represented by Figure 1; a scatterplot including international and consumption data. A line of best fit is displayed on the graph, visualizing the negative correlation between international and consumption tax. The data includes information from 194 countries from 1988 to 2022. The x-axis represents consumption tax and y-axis represents international tax, both in terms of percent of revenue. The line of best fit with a negative slope and negative correlation test indicate a modern inverse relationship between these variables. 
 
-In this section, we present the analysis of the relationship between taxes on consumption (specifically VAT) and taxes on international trade (tariffs) in developing countries, using the data collected from the World Integrated Trade Solution database. Our primary focus is to investigate the potential inverse relationship between VAT revenue and tariff revenue, and to understand the trends over time. We will first look at descriptive statistics, followed by graphical evidence, and then analyze time-series trends and correlations. 
-
-Firstly, we got a value of -.3255 for a correlation test between the international tax and the consumption tax variable, both as a percent of revenue. Therefore, these variables have a moderate strength negative correlation. This shows that there is a statistically significant negative relationship between tariffs and consumption taxes in developing and developed countries. Thus, we reject the null hypothesis.
-
-
-
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.5\linewidth]{Reproducibility_Package//png_files/Scatterplotintvscons.png}
-    \caption{Scatterplot of international tax vs consumption tax}
+    \caption{Scatterplot of International tax vs. Consumption Tax}
     \label{fig:enter-label}
 \end{figure}
 
-\section{Discussion}
-\label{sec:discussion}
+Figure 2 provides a direct visualization that compares international and consumption tax directly. Consumption tax has a higher density at a lower percent of revenue, while international tax seems to take a larger percent of the revenue than consumption tax at around 10 percent of revenue. 
 
-Optional. This is where you would discuss any of the following
-\begin{itemize}
-    \item caveats (are there problems with the data that there are no obvious ways to resolve? if so, how might this impact
-    \item future work / next steps
-    \item implications of the results: that is, how your findings -- if they were causally identified -- might inform policymaking, etc.
-\end{itemize}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Reproducibility_Package//png_files/twowayhistintcons.png}
+    \caption{Histogram of International and Consumption Tax}
+    \label{fig:enter-label}
+\end{figure}
+
+Figure 3 shows a histogram of international and consumption tax in only developing countries, allowing for comparisons between Figure 2 in how things differ between all countries and just developing countries. In developing countries, consumption tax and international tax seem to much more similar across more revenue percentages in comparison to Figure 2. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Reproducibility_Package//png_files/twowayhistdevelopingintcons.png}
+    \caption{Histogram of International and Consumption Tax in Developing Countries}
+    \label{fig:enter-label}
+\end{figure}
+
+Figure 4 is significant as it displays the opposite trend in comparison to Figure 3. International tax has a higher density in developing countries at lower percentages of revenue in Figure 4, while Figure 3 shows that International has a lower density in developing countries at higher percentages of revenue. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Reproducibility_Package//png_files/twowayhistdevelopedintcons.png}
+    \caption{Histogram of International and Consumption Tax in Developed Countries}
+    \label{fig:enter-label}
+\end{figure}
+
+While the overall trend and correlation indicate a clear relationship between consumption taxes like VAT and tariffs, there are several areas that warrant further investigation. Two particular things that we would like to look further into is specific countries and their relationship between taxes and tariffs and regional differences and how those region have different relationships with taxes and tariffs.
+
+Country-Level Analysis: We could explore time-series graphs for individual countries, particularly those that deviate significantly from the general trend, to identify specific drivers behind these shifts. For example, countries with significant fluctuations in trade policy (e.g., trade liberalization or protectionist measures) could provide insights into how these changes affect the relationship between consumption-based taxes like VAT and tariffs.
+
+Regional Differences: A breakdown of the data by region could shed light on whether the inverse relationship holds across different geographical areas or if regional differences play a role in the strength of this relationship.
+
+In summary, the data suggests a moderate inverse relationship between VAT and tariff revenue in developing countries. This relationship appears to be strengthening over time, reflecting broader shifts in tax systems towards more consumption-based taxation, driven by global economic integration and trade liberalization. However, further exploration at the country and regional levels could provide additional insights into the underlying dynamics.
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-Re-state (in different words) what you did and what you learned. If your discussion (Section 6) would be short, you can just have a Conclusion section that includes your discussion (that is, leave out a separate Discussion section).
+In this study, we examined the relationship between consumption taxes such as Value Added Tax (VAT) revenue and tariff revenue in developing countries, aiming to determine if there is an inverse relationship between these two forms of taxation. By analyzing data from the World Integrated Trade Solution (WITS) database spanning from 1988 to 2022, we found a moderate negative correlation between VAT revenue and tariff revenue across 194 countries. This suggests that, as countries modernize and integrate more into the global economy, they may increasingly rely on consumption-based taxes like VAT while reducing their dependence on tariffs as a source of government revenue.
+
+While our study provides valuable insights into the relationship between consumption tax and tariff revenue in developing countries, several limitations must be acknowledged. One key issue is the quality and completeness of the data. Although the World Integrated Trade Solution (WITS) database is a robust source, the accuracy of data collection can vary across countries, particularly in developing nations where reporting practices may be inconsistent or incomplete. Missing or unreliable data could affect the significance of our findings and introduce potential biases, especially when analyzing specific countries. 
+
+Overall, this research provides valuable insights for policymakers in developing countries. By shifting towards consumption-based taxes and reducing reliance on tariffs, governments could improve revenue stability and enhance economic efficiency. However, careful attention must be paid to the specific challenges each country faces, particularly in enforcing consumption taxes and addressing the circumstances of their specific economy. Future research should focus on further refining these findings and exploring the political and regional factors that may shape the relationship between consumption taxes and tariffs, specifically as a percent of revenue.
+
+
 
 \newpage
 \section*{Bibliography}
