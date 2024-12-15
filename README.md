@@ -1,4 +1,4 @@
-# Taxes and Tarriffs
+# Abstract
 
 We investigate the relationship between consumption taxes such as Value Added Tax (VAT) and
 international tax in developing and developed countries, with the aim of understanding the evolv-
@@ -15,3 +15,5 @@ like VAT, their reliance on tariffs decreases. This trend is particularly notabl
 tries, where tariffs historically constituted a larger share of revenue. The paper discusses these
 findings within the context of broader tax reform literature, highlighting the potential benefits of
 shifting from trade taxes to consumption taxes.
+
+# Contents
