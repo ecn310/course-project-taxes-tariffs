@@ -34,7 +34,7 @@ bookmarksopen=true,hyperfootnotes=false]{hyperref}
 
 \begin{document}
 \title{Taxes and Tariffs}
-\author{Kathryn Sarrge\thanks{Syracuse University, Economics Department. Email: kbuzard@syr.edu.} \and Dylan Thomas\thanks{abc} \and Umar Bilgrammi\thanks{abc}}
+\author{Kathryn Sarrge\thanks{Syracuse University, Economics Students. Email: kesarrge@syr.edu} \and Dylan Thomas\thanks{dthoma26@syr.edu} \and Umar Bilgrammi\thanks{ujbilgra@syr.edu}}
 \date{\vskip-.1in \today}
 \maketitle
 
@@ -106,17 +106,35 @@ The summary statistics for the three variables- taxes on goods and services, tax
 
 
 
-These statistics reflect the general range of taxes and tariffs as a percentage of government revenue. It is important to note that these figures represent averages across developing countries, with significant variation between individual countries.
+These statistics reflect the general range of taxes and tariffs as a percentage of government revenue. It is important to note that these figures represent averages across developing and developed countries, with significant variation between individual countries.
 
 
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{ccccc}}
+            &\multicolumn{5}{c}{}                                         \\
+            &\multicolumn{5}{c}{}                                            \\
+            &       count&        mean&          sd&         min&         max\\
+\hline
+international&        2969&    10.24049&    11.61363&   -.1304207&    64.65984\\
+gdp         &        6499&    11320.32&     17465.2&    22.85037&    133590.1\\
+consumption &        3211&    10.25779&    5.280867&    .0329885&    40.00499\\
+\hline
+\end{tabular}
+}
 
 
-\subsection{Survey data}
+\subsection{Survey data} 
+
 
 \section{Results}
 \label{sec:result}
 
-We have conducted three separate analysis on our final data, all done in Stata. The first analysis we conducted was a correlation test to in relation to our hypothesis to determine whether our two variables had a positive or negative correlation. Our current working hypothesis is if Value added tax or sales tax revenue increases in a developing country, then tariff revenue decreases. Our null hypothesis is that in developing countries, there is no difference in revenue when value added tax or tariffs change. The specific code we ran is pwcorr international vat, which uses our two variables to determine there correlation. We got a value of -.3255 for this test, meaning these variables have a moderate strength negative correlation. This shows that there is a weak to moderate negative relationship between tariffs and value added tax in developing countries. Thus, we reject the null hypothesis. We plan on conducting further testing in order to truly determine the validity of our hypothesis. Additionally, we created a scatter plot, bar graph, and histogram to visualize our data. These figures help accurately compare our data, but we plan an altering aspects of these figures to better resemble to results of our testing. 
+In this section, we present the analysis of the relationship between taxes on consumption (specifically VAT) and taxes on international trade (tariffs) in developing countries, using the data collected from the World Integrated Trade Solution database. Our primary focus is to investigate the potential inverse relationship between VAT revenue and tariff revenue, and to understand the trends over time. We will first look at descriptive statistics, followed by graphical evidence, and then analyze time-series trends and correlations. 
+
+Firstly, we got a value of -.3255 for a correlation test between the international tax and the consumption tax variable, both as a percent of revenue. Therefore, these variables have a moderate strength negative correlation. This shows that there is a statistically significant negative relationship between tariffs and consumption taxes in developing and developed countries. Thus, we reject the null hypothesis.
+
+
 
 \begin{figure}
     \centering
