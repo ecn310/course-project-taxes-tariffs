@@ -9,7 +9,7 @@ This folder contains the reproducibility package for the Research Paper "Taxes a
 ## Table of Contents
 1. [Introduction](#introduction)  
 2. [Data Description and Accessing](#data-description)  
-3. [Datasets and Do Files](#Datasets)  
+3. [Datasets and Do Files](#Datasets-and-Do-Files)  
 4. [Access and Licensing](#access-and-licensing)  
 5. [Code for Reproducibility](#code-for-reproducibility)  
 6. [Outputs](#outputs)
