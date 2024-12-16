@@ -10,9 +10,6 @@ the two forms of taxation as a percentage of government revenue and consider the
 for economic development. Our findings reveal a moderate negative correlation between VAT and
 tariff revenue in developing and developed countries, with a correlation coefficient of -0.3255,
 indicating that as countries shift towards consumption-based taxes like VAT, their reliance on
-tariffs decreases. This relationship is particularly notable in developing countries, where tariffs
-historically constituted a larger share of revenue. The paper discusses these findings within the
-context of broader tax reform literature, analyzing the relationship of shifting from trade taxes to
-consumption taxes.
+tariffs decreases. Our research discusses these findings within the context of broader tax reform literature, analyzing the relationship of shifting from trade taxes to consumption taxes.
 
 # Contents
