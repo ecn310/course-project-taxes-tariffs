@@ -6,8 +6,6 @@ This folder contains the reproducibility package for the Research Paper "Taxes a
 - Stata (code was last run with version 16)
 - The code was last run on a **Windows 10 computer with 32.0 GB of RAM**
 
-## Instructions to Replicators
-
 ## Table of Contents
 1. [Introduction](#introduction)  
 2. [Data Description](#data-description)  
@@ -18,6 +16,11 @@ This folder contains the reproducibility package for the Research Paper "Taxes a
 
 ## Introduction
 
+This Reproducibility package will describe our project files, data, variables, terminology used in report, and outputs in great detail. It is designed to organize and keep all files in one place for ease of reproducibiility. The table of contents is a good guide to click on and break the project into sections, although we recommend going from item to item in order. 
+
+## Data Description
+
+final test? 
 
 
 ### Downloading the Data
