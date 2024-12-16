@@ -8,6 +8,55 @@ This folder contains the reproducibility package for the Research Paper "Taxes a
 
 ## Instructions to Replicators
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+
+
+GitHub Flavored Markdown (GFM) doesn't have a built-in automatic table of contents (TOC) generation. However, you can create one manually by linking to section headers in your document using anchor links. Here's how to do it:
+
+1. Create the TOC
+Write the table of contents as a list, using [Link Text](#header-id) syntax. The #header-id is automatically generated from the section header text, converted to lowercase, with spaces replaced by hyphens and special characters removed.
+
+markdown
+Copy code
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+2. Add Section Headers
+Create the corresponding headers in your markdown file. These should match the links in the TOC.
+
+markdown
+Copy code
+## Introduction
+This is the introduction section.
+
+## Features
+This section describes the features.
+
+## Installation
+Steps for installation.
+
+## Usage
+How to use the project.
+
+## Contributing
+Guidelines for contributing.
+
+## License
+Information about the license.
+
+
+
 ### Downloading the Data
 
 The data being used for this research project is from World Integrated Trade Solution. We analyzed these three time series datasets
@@ -18,9 +67,9 @@ The data being used for this research project is from World Integrated Trade Sol
 To download raw data, use the links above to access the datasets on the WITS website. Then, click the light grey button that has an arrow pointing downwards in the top right of the table.
 
 The datasets for from above can be found in our [raw_data](https://github.com/ecn310/course-project-taxes-tariffs/tree/main/Reproducibility_Package/raw_data) folder. they are labeled:
-- internationaltax.xlsx
-- consumptiontaxreproducible.xlsx
-- gdpdata.xlsx 
+- internationaldataset.xlsx
+- consumptiontaxdataset.xlsx
+- GDPdataset.xlsx 
 
 ### Datasets
 
