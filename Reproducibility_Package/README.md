@@ -15,14 +15,12 @@ The data being used for this research project is from World Integrated Trade Sol
 - [Taxes on Goods and Services](https://wits.worldbank.org/CountryProfile/en/Country/BY-COUNTRY/StartYear/1988/EndYear/2022/Indicator/GC-TAX-GSRV-VA-ZS)
 - [GDP per capita](https://wits.worldbank.org/CountryProfile/en/Country/BY-COUNTRY/StartYear/1988/EndYear/2022/Indicator/NY-GDP-PCAP-PP-CD)
 
-To download raw data, use the links above to access the datasets on the WITS website. Then, click the light grey button that has an arrow pointing downwards in the top right of the table. We have also saved these excel datasets which can be found in our [Excel_Files](Reproducibility_Package/Excel_Files) folder.
+To download raw data, use the links above to access the datasets on the WITS website. Then, click the light grey button that has an arrow pointing downwards in the top right of the table.
 
-The datasets for source can be found in our [raw_data](https://github.com/ecn310/course-project-taxes-tariffs/tree/main/Reproducibility_Package/raw_data) folder. they are labeled:
+The datasets for from above can be found in our [raw_data](https://github.com/ecn310/course-project-taxes-tariffs/tree/main/Reproducibility_Package/raw_data) folder. they are labeled:
 - internationaltax.xlsx
 - consumptiontaxreproducible.xlsx
-- gdpdata.xlsx
-
- The data is considered raw because we must merge all three data sets to begin performing statistical analysis 
+- gdpdata.xlsx 
 
 ### Datasets
 
@@ -37,7 +35,9 @@ The provided code reproduces all the tables and figures in the paper.
 
 | Exhibit | Input dataset | Program | Outputs |
 |---------|---------------|---------|---------|
-| Figure 1 | [sortedultimatemerge.dta]([url](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta)) | scatterplotconvsint.do | Scatterplotintvscons.png |
-| Figure 4 | sortedultimatemerge.dta | twowaydevelopedhistintcons.do | twowayhistdevelopedintcons.png |
-| Figure 3 | sortedultimatemerge.dta | twowaydevelopinghistintcons.do | twowayhistdevelopingintcons.png |
+| Figure 1 | [sortedultimatemerge.dta]([url](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta)) | [scatterplotconvsint.do]([url](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/scatterplotconsvsint.do)) | Scatterplotintvscons.png |
 | Figure 2 | sortedultimatemerge.dta | twowayhistintcons.do | twowayhistintcons.png |
+| Figure 3 | sortedultimatemerge.dta | twowaydevelopinghistintcons.do | twowayhistdevelopingintcons.png |
+| Figure 4 | sortedultimatemerge.dta | twowaydevelopedhistintcons.do | twowayhistdevelopedintcons.png |
+
+
