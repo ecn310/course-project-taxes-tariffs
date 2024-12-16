@@ -15,7 +15,7 @@ The data being used for this research project is from World Integrated Trade Sol
 - [Taxes on Goods and Services](https://wits.worldbank.org/CountryProfile/en/Country/BY-COUNTRY/StartYear/1988/EndYear/2022/Indicator/GC-TAX-GSRV-VA-ZS)
 - [GDP per capita](https://wits.worldbank.org/CountryProfile/en/Country/BY-COUNTRY/StartYear/1988/EndYear/2022/Indicator/NY-GDP-PCAP-PP-CD)
 
-To download raw data, use the links above to access the datasets on the WITS website. Then, click the thunder grey button that has an arrow pointing downwards in the top right of the table. We have also saved these excel datasets which can be found in our [Excel_Files](Reproducibility_Package/Excel_Files) folder.
+To download raw data, use the links above to access the datasets on the WITS website. Then, click the light grey button that has an arrow pointing downwards in the top right of the table. We have also saved these excel datasets which can be found in our [Excel_Files](Reproducibility_Package/Excel_Files) folder.
 
 The datasets for source can be found in our [Data_Files](Reproducibility_Package/Data_Files) folder. they are labeled:
 - internationaltax
