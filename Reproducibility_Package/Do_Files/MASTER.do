@@ -13,7 +13,7 @@
 
 *gdpdata.do \\ importing excel GDP data and reshaping it into a long dataset
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files"
+cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\raw_data"
 
 *replace the user name "kesarrge" with your file path directory 
 
@@ -67,7 +67,7 @@ clear
 
 *internationaltaxnew.do \\ importing excel international data and reshaping it into a long dataset
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files"
+cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\raw_data"
 
 import excel "internationaldataset", sheet("Country-Timeseries")
 
