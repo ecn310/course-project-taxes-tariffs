@@ -9,51 +9,14 @@ This folder contains the reproducibility package for the Research Paper "Taxes a
 ## Instructions to Replicators
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+1. [Introduction](#introduction)  
+2. [Data Description](#data-description)  
+3. [Summary Statistics](#summary-statistics)  
+4. [Access and Licensing](#access-and-licensing)  
+5. [Code for Reproducibility](#code-for-reproducibility)  
+6. [Outputs](#outputs)
 
-
-
-GitHub Flavored Markdown (GFM) doesn't have a built-in automatic table of contents (TOC) generation. However, you can create one manually by linking to section headers in your document using anchor links. Here's how to do it:
-
-1. Create the TOC
-Write the table of contents as a list, using [Link Text](#header-id) syntax. The #header-id is automatically generated from the section header text, converted to lowercase, with spaces replaced by hyphens and special characters removed.
-
-markdown
-Copy code
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-2. Add Section Headers
-Create the corresponding headers in your markdown file. These should match the links in the TOC.
-
-markdown
-Copy code
 ## Introduction
-This is the introduction section.
-
-## Features
-This section describes the features.
-
-## Installation
-Steps for installation.
-
-## Usage
-How to use the project.
-
-## Contributing
-Guidelines for contributing.
-
-## License
-Information about the license.
 
 
 
