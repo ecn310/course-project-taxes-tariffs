@@ -1,4 +1,4 @@
-import excel "C:\Users\ujbilgra\OneDrive - Syracuse University\Documents\GitHub\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files\intaxedited.xlsx", sheet("Country-Timeseries")
+import excel "C:\Users\ujbilgra\OneDrive - Syracuse University\Documents\GitHub\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files\internationaltaxdatasheet.xlsx", sheet("Country-Timeseries")
 
 local year = 1988
 
