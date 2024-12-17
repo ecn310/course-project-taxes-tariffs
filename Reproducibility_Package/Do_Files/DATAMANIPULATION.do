@@ -13,9 +13,11 @@
 
 *** we are importing the excel GDP dataset and reshaping it into a long dataset
 
+*change the directory by replacing the user name "kesarrge" with your file path directory 
+
 cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package"
 
-*replace the user name "kesarrge" with your file path directory 
+*import the excel data
 
 import excel "raw_data\GDPdataset.xlsx", sheet("Country-Timeseries")
 
@@ -25,23 +27,23 @@ import excel "raw_data\GDPdataset.xlsx", sheet("Country-Timeseries")
 
 *To start off, we are going to do this for the GDP dataset
 
-local year = 1988
+*sets the first start year as 1988, which is important because the codes from line 34-37 establish a loop which changes C-AK to the actual year it is in the excel sheet
 
-*sets the first start year as 1988, which is important because the codes from line 30-33 establish a loop which changes C-AK to the actual year it is in the excel sheet
+local year = 1988
 
 foreach var of varlist C-AK {  // Adjust if more variables exist
     rename `var' yr`year'
     local year = `year' + 1
 }
 
+*The new loop only renamed C-AK leaving column A and B which must be renamed to CountryName and IndicatorName to make sense of the respective data in those columns 
+
 rename A CountryName
 rename B IndicatorName
 
-*The new loop only renamed C-AK leaving column A and B which must be renamed to CountryName and IndicatorName to make sense of the respective data in those columns 
+*drops row 1 where all years are labelled as C-AK 
 
 drop in 1
-
-*drops row 1 where all years are labelled as C-AK 
 
 *now we will begin reshaping the data from wide to long 
 
@@ -51,13 +53,13 @@ reshape long yr, i(id) j(year)
  
 rename yr gdp
 
-drop id
-
 *drop id so stata does not confuse the id variable with other id variables during a dataset merge 
 
-save "Data_Files\gdpreproducible" , replace 
+drop id
 
 *save the file
+
+save "Data_Files\gdpreproducible" , replace 
 
 *we now have one reshaped dataset and will repeat the same procedures for consumption tax and tariffs (international data)
 
@@ -162,8 +164,8 @@ replace id = 1 if gdp > 12000
 
 replace id = 2 if gdp < 12000
 
-drop if international < -5
-
 *this drops an outlier which is a bad data entry from China's international tarriffs 
+
+drop if international < -5
 
 save "Data_Files\sortedultimatemerge", replace
