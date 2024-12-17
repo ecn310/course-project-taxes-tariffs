@@ -130,6 +130,8 @@ use "Data_Files\consumptiontaxreproducible"
 
 merge 1:1 CountryName year using "Data_Files\internationaltax.dta"
 
+drop _merge
+
 pwcorr international consumption, sig
 
  twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50))
@@ -150,11 +152,13 @@ use "Data_Files\merged"
 
 describe using "Data_Files\gdpreproducible"
 
-merge 1:1 CountryName year using "Data_Files\gdpreproducible"
+merge 1:1 CountryName year using "Data_Files\gdpreproducible.dta"
 
 sort gdp
 
 drop _merge
+
+gen id = _n
 
 *now that we have the final working dataset we are going to split the countries into developing and developed countries to run further analysis and provide more technical reasoning for our findings
 *We decided a cutoff for gdp per capita should be $12,000 after researching various sources which are linked in the final project report 
