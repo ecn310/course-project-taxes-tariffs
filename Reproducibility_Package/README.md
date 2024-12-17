@@ -38,9 +38,9 @@ List of all variables
 - GDP (Per Capita)
   - This variable is observed in the GDPdataset.xlsx. It is not a primary variable. This variable is used to sort countries into developing and developed based on a cutoff of $12,000. The variable appears in the final data due to this cutoff used to sort countries but is not used in any correlation tests.
 
-Each of these variables comes from its own unique data found on the World Integrated Trade Solution Website (WITS). Follow the directions below to access the data. 
+Each of these variables comes from its own unique data found on the World Integrated Trade Solution (WITS) wesbite. Follow the directions below to access the data. 
 
-IMPORTANT: To download this raw data, use the links above to access the datasets on the WITS website. Then, click the light grey button that has an arrow pointing downwards in the top right of the table. This will create an Excel file download. Download the Excel file and use the import feature in stata to load the data into stata. Do not important any variables as strings or change any row names to strings. This is important for reshaping the data for later. 
+IMPORTANT: To download the raw data, use the links below to access the datasets on the WITS website. Then, click the light grey button that has an arrow pointing downwards in the top right of the table. This will create an Excel file download. Download the Excel file and use the import feature in stata to load the data into stata. Do not important any variables as strings or change any row names to strings. This is important for reshaping the data for later. 
 
 Links to download the data set are found here: 
 
