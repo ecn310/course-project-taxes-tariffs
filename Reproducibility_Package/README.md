@@ -10,9 +10,9 @@ Between Consumption Tax and Tariff Revenue in Developed and Developing Countries
 ## Table of Contents
 1. [Introduction](#introduction)  
 2. [Data Description and Accessing](#data-description-and-accessing)  
-3. [Datasets and Do Files](#Datasets-and-Do-Files)
+3. [Datasets and Do Files](#datasets-and-do-files)
 4. [Merging Data](#merging-data)
-5. [Data Outputs](#Data-Outputs)  
+5. [Data Outputs](#data-outputs)
 6. [Code for Reproducibility](#code-for-reproducibility)  
 7. [Outputs](#outputs)
 
@@ -135,7 +135,7 @@ __Two-Sample T-Tests__
 - Interpretation of the results is in found in the [LaTeX report](https://www.overleaf.com/project/66fdd3a10a7eff5a6a8c7ef7)
 - Basic introductory summary of the tests: XXXXXXXXXX
 
-__Figures__
+## Outputs
 
 In addition, we also generated four figures used in our final report. A table showing the dataset, do file, and output png is below:
 
