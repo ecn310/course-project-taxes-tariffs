@@ -13,3 +13,4 @@ indicating that as countries shift towards consumption-based taxes like VAT, the
 tariffs decreases. Our research discusses these findings within the context of broader tax reform literature, analyzing the relationship of shifting from trade taxes to consumption taxes.
 
 # Contents
+1. [Reproducibility Package](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/README.md)
