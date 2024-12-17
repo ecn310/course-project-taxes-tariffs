@@ -1,16 +1,6 @@
 # Abstract
 
-We investigate the relationship between consumption taxes such as Value Added Tax (VAT) and
-tariffs in developing and developed countries, with the aim of understanding the fiscal strategies
-employed by both developing and developed countries. Specifically, we explore whether there
-exists an inverse relationship between consumption tax and tariff revenue, hypothesizing that as
-consumption taxes like VAT increases, tariff revenue decreases. Utilizing data from the World In-
-tegrated Trade Solution (WITS) database, covering 194 countries from 1988 to 2022, we analyze
-the two forms of taxation as a percentage of government revenue and consider their implications
-for economic development. Our findings reveal a moderate negative correlation between VAT and
-tariff revenue in developing and developed countries, with a correlation coefficient of -0.3255,
-indicating that as countries shift towards consumption-based taxes like VAT, their reliance on
-tariffs decreases. Our research discusses these findings within the context of broader tax reform literature, analyzing the relationship of shifting from trade taxes to consumption taxes.
+We explore the relationship between consumption taxes, such as value added tax (VAT), and tariffs in developed and developing countries to better understand the revenue strategies employed by both groups of countries. Specifically, we explore the correlation between consumption tax and tariffs. We hypothesize that as the share of revenue from consumption taxes increases, the share derived from tariffs decreases, indicating a negative correlation between these two revenue sources.  Using data from the World Integrated Trade Solution (WITS) database, which covers 194 countries from 1988 to 2022, we analyze the two forms of taxation as a percentage of government revenue and consider their implications for economic development. Our findings reveal a moderate negative correlation between consumption tax and tariff revenue in both developing and developed countries, with a correlation coefficient of -0.3255. The implications of this value indicate an inverse relationship between consumption taxes and tariffs in developed and developing countries. Our research synthesizes these findings with the broader literature on tax reform, analyzing why countries opt for tariff revenue or consumption taxes.
 
 # Contents
 1. [Reproducibility Package](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/README.md)
