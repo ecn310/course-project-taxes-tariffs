@@ -126,9 +126,17 @@ clear
 
 use "Data_Files\consumptiontaxreproducible"
 
-merge 1:1 CountryName year using internationaltax.dta
+merge 1:1 CountryName year using "Data_Files\internationaltax.dta"
 
-drop _merge 
+pwcorr international consumption, sig
+
+ twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50))
+ 
+ scatter international consumption
+ 
+mean consumption
+
+mean international
 
 save "Data_Files\merged", replace 
 
