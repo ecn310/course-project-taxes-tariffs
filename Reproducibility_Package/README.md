@@ -11,7 +11,7 @@ This folder contains the reproducibility package for the Research Paper "Taxes a
 2. [Data Description and Accessing](#data-description)  
 3. [Datasets and Do Files](#Datasets-and-Do-Files)
 4. [Merging Data](#merging-data)
-5. [Access and Licensing](#access-and-licensing)  
+5. [Data Outputs](#Data-Outputs)  
 6. [Code for Reproducibility](#code-for-reproducibility)  
 7. [Outputs](#outputs)
 
@@ -72,7 +72,7 @@ NOTE: When running the do file, be sure to change the user name. Since the user 
 
 Running the do file will reshape the data from wide to long. More detailed commentary on each line of code in the do file can be found in the master do file linked [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/MASTER.do)
 
-__Consumption Tax Dataset___
+__Consumption Tax Dataset__
   - Open the consumption tax dataset through the import excel sheet feature in stata. Do not check any boxes and click continue. 
     -  The do file to replicate the final data is [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/consumptiontax.do)
   - Use the raw data from above loaded into stata and run the data to get the final dataset.
@@ -90,7 +90,23 @@ With all of the datasets now reshaped from wide to long, it is time to merge the
 
 ## Merging Data
 
-## Outputs
+Due to the size of the datasets, two different merging steps will take place. First, the consumptiontaxreproducible.dta will be merged with internationaltax.dta. This will combine our two main variables. Then, GDP will be merged with the data to split countries into developed and developing, allowing for correlation tests to be carried out.  
+
+To merge the data follow these steps
+- __Step 1__
+  - use the [do file](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/mergeddata.do) to merge consumption tax with international tax
+  - This should give you the file: [merged.dta](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/merged.dta)
+  - Save this file as merged.dta and clear stata if not already done.
+
+- __Step 2__
+  - using merged.dta follow this [do file ](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/sortedultimatemerge.do)
+  - This will give you the final data set titled, sortedultimatemerge.dta. The dataset is linked [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta)
+
+NOTE: Running the do file for sortedultimatemerge splits countries into developed and developing. Within the dataset, countries are assigned an ID to represent which country is developed and developing. An ID of 1 means the country is developed. An ID of 2 means the country is developing. You will also notice we ran the code drop if international < -5. This is because there is a bad data entry in the dataset regarding China's consumption tax for the year 2005. This data entry is removed to prevent skewing of the graph and summary statistics. 
+
+Data has now been successfully merged and transformed into the final dataset. The data can now be used to run tests, generate figures, and test the null hypothesis. 
+
+## Data Outputs
 The provided code reproduces all the tables and figures in the paper.
 
 | Exhibit | Input dataset | Program | Outputs |
@@ -99,5 +115,3 @@ The provided code reproduces all the tables and figures in the paper.
 | Figure 2 | sortedultimatemerge.dta | twowayhistintcons.do | twowayhistintcons.png |
 | Figure 3 | sortedultimatemerge.dta | twowaydevelopinghistintcons.do | twowayhistdevelopingintcons.png |
 | Figure 4 | sortedultimatemerge.dta | twowaydevelopedhistintcons.do | twowayhistdevelopedintcons.png |
-
-
