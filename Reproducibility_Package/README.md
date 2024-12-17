@@ -109,9 +109,21 @@ Data has now been successfully merged and transformed into the final dataset. Th
 ## Data Outputs
 The provided code reproduces all the tables and figures in the paper.
 
+To run the correlation tests and two-sample t-tests, make sure to use the sortedultimatemerge.dta
+
+- Correlation tests
+  - The correlations test do file is found in the [mergeddata.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/mergeddata.do) file
+  - Specifically, the line pwcorr international consumption generates a P-value of -0.3255.
+
+Two-Sample T-Tests
+- The Two-Sample T-Test do file is found in the [T-Tests.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/T-Tests.do)
+- A table of the results is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/T-Tests)
+- Interpretation of the results is in found in the [LaTeX report](https://www.overleaf.com/project/66fdd3a10a7eff5a6a8c7ef7)
+- Basic introductory summary of the tests: 
+
 | Exhibit | Input dataset | Program | Outputs |
 |---------|---------------|---------|---------|
-| Figure 1 | [sortedultimatemerge.dta]([url](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta)) | [scatterplotconvsint.do]([url](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/scatterplotconsvsint.do)) | Scatterplotintvscons.png |
+| Figure 1 | [sortedultimatemerge.dta](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta) | [scatterplotconvsint.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/scatterplotconsvsint.do) | Scatterplotintvscons.png |
 | Figure 2 | sortedultimatemerge.dta | twowayhistintcons.do | twowayhistintcons.png |
 | Figure 3 | sortedultimatemerge.dta | twowaydevelopinghistintcons.do | twowayhistdevelopingintcons.png |
 | Figure 4 | sortedultimatemerge.dta | twowaydevelopedhistintcons.do | twowayhistdevelopedintcons.png |
