@@ -72,10 +72,10 @@ Using the raw data Excel files, which are loaded into stata through the import f
 
 __International Tax Dataset__ 
   - Open the international tax dataset through the import excel sheet feature in stata. Do not check any boxes and click continue. 
-    - The do file to replicate the international tax datasheet is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/internationtaltaxnew.do)
+    - The do file to replicate the international tax datasheet is found here: [internationaltaxnew.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/internationtaltaxnew.do)
   - Use the raw data from above loaded into stata and run the data to get the final dataset.
     -  The final dataset titled International Tax Dataset is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/internationaltax.dta)
-     - The do-file you have just run will give you a new data set that matches the final international tax dataset. 
+     - Run the internationaltaxnew do-file listed right above to create a new data set that matches the final international tax dataset. 
 
 NOTE: When running the do file, be sure to change the user name. Since the user running this reproducibility package will not have the same running file path it is necessary to change the user name in the file path. For example, taken from the international tax do file "import excel "C:\Users\changenamehere\OneDrive - Syracuse University\Documents\GitHub\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files\internationaltaxdatasheet.xlsx", sheet("Country-Timeseries") Your file path may look different depending on whether you saved the Excel sheet in the one-drive directory or not. Be aware of this and change the file directory as needed. 
 
