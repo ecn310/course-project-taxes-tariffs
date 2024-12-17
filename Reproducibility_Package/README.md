@@ -119,11 +119,13 @@ Two-Sample T-Tests
 - The Two-Sample T-Test do file is found in the [T-Tests.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/T-Tests.do)
 - A table of the results is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/T-Tests)
 - Interpretation of the results is in found in the [LaTeX report](https://www.overleaf.com/project/66fdd3a10a7eff5a6a8c7ef7)
-- Basic introductory summary of the tests: 
+- Basic introductory summary of the tests: XXXXXXXXXX
+
+In addition, we also generated four figures used in our final report. A table showing the dataset, do file, and output png is below:
 
 | Exhibit | Input dataset | Program | Outputs |
 |---------|---------------|---------|---------|
-| Figure 1 | [sortedultimatemerge.dta](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta) | [scatterplotconvsint.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/scatterplotconsvsint.do) | Scatterplotintvscons.png |
-| Figure 2 | sortedultimatemerge.dta | twowayhistintcons.do | twowayhistintcons.png |
-| Figure 3 | sortedultimatemerge.dta | twowaydevelopinghistintcons.do | twowayhistdevelopingintcons.png |
-| Figure 4 | sortedultimatemerge.dta | twowaydevelopedhistintcons.do | twowayhistdevelopedintcons.png |
+| Figure 1 | [sortedultimatemerge.dta](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta) | [scatterplotconvsint.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/scatterplotconsvsint.do) | [Scatterplotintvscons.png](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/Scatterplotintvscons.png) |
+| Figure 2 | [sortedultimatemerge.dta](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta) | [twowayhistintcons.do ](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/twowayhistintcons.do)| [twowayhistintcons.png](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/twowayhistintcons.png) |
+| Figure 3 | [sortedultimatemerge.dta](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta)| [twowaydevelopinghistintcons.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/twowaydevelopinghistintcons.do)| [twowayhistdevelopingintcons.png](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/twowayhistdevelopingintcons.png) |
+| Figure 4 | [sortedultimatemerge.dta](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta) | [twowaydevelopedhistintcons.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/twowaydevelopedhistintcons.do) | [twowayhistdevelopedintcons.png](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/twowayhistdevelopedintcons.png) |
