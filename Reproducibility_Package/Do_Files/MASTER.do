@@ -7,11 +7,11 @@
 *https://wits.worldbank.org/CountryProfile/en/Country/BY-COUNTRY/StartYear/1988/EndYear/2022/Indicator/GC-TAX-INTT-RV-ZS which corresponds to tarrifs
 *https://wits.worldbank.org/CountryProfile/en/Country/BY-COUNTRY/StartYear/1988/EndYear/2022/Indicator/NY-GDP-PCAP-CD gdp per capita current US Dollars 
 
-*convert these 3 files into excel sheets by clicking the download button on the top right of the table. It is labelled in gray and and has an arrow facing downwards into a box.
+*convert these 3 files into excel sheets by clicking the download button on the top right of the table. It is labelled in light gray and and has an arrow facing downwards into a box.
 
 *Save these excel files with their corresponding names e.g. Gdp data is saved as gdp.xlsx
 
-*gdpdata.do \\ importing excel GDP data and reshaping it into a long dataset
+*** we are importing the excel GDP dataset and reshaping it into a long dataset
 
 cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package"
 
@@ -55,7 +55,7 @@ drop id
 
 *drop id so stata does not confuse the id variable with other id variables during a dataset merge 
 
-save "Data_Files\gdpdata" , replace 
+save "Data_Files\gdpreproducible" , replace 
 
 *save the file
 
@@ -63,7 +63,7 @@ save "Data_Files\gdpdata" , replace
 
 clear
 
-*** we are now importing international tax's raw excel data and reshaping it into a long dataset
+*** we are now importing international tax's raw excel data (tariffs) and reshaping it into a long dataset
 
 import excel "raw_data\internationaldataset", sheet("Country-Timeseries")
 
@@ -91,7 +91,7 @@ save "Data_Files\internationaltax", replace
 
 clear
 
-*consumptiontax.do
+*** we are now importing consumption tax's raw excel data and reshaping it into a long dataset
 
 import excel "raw_data\consumptiondataset", sheet("Country-Timeseries")
 
@@ -122,7 +122,7 @@ clear
 *once all three datasets have been reshaped, we can now combine the datasets and create the final dataset 
 *First we will merge consumption tax with tariffs, save the dataset and merge it again with the gdp dataset in order to create the final dataset
 
-*mergeddatasets.do
+*** merging consumptionreproducible.dta and internationaltax.dta datasets into one
 
 use "Data_Files\consumptiontaxreproducible"
 
@@ -134,7 +134,7 @@ save "Data_Files\merged", replace
 
 clear
 
-*sortedultimatemergere.do
+*** merging merged.dta and gdpreproducible.dta into one dataset
 
 use "Data_Files\merged"
 
@@ -155,6 +155,7 @@ replace id = 1 if gdp > 12000
 replace id = 2 if gdp < 12000
 
 drop if international < -5
+
 *this drops an outlier which is a bad data entry from China's international tarriffs 
 
 save "Data_Files\sortedultimatemerge", replace
