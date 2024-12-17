@@ -9,10 +9,11 @@ This folder contains the reproducibility package for the Research Paper "Taxes a
 ## Table of Contents
 1. [Introduction](#introduction)  
 2. [Data Description and Accessing](#data-description)  
-3. [Datasets and Do Files](#Datasets-and-Do-Files)  
-4. [Access and Licensing](#access-and-licensing)  
-5. [Code for Reproducibility](#code-for-reproducibility)  
-6. [Outputs](#outputs)
+3. [Datasets and Do Files](#Datasets-and-Do-Files)
+4. [Merging Data](#merging-data)
+5. [Access and Licensing](#access-and-licensing)  
+6. [Code for Reproducibility](#code-for-reproducibility)  
+7. [Outputs](#outputs)
 
 ## Introduction
 
@@ -34,6 +35,9 @@ IMPORTANT: To download this raw data, use the links above to access the datasets
 
 Links to download the data set are found here: 
 
+Note: when saving these datasets save them to their exact excel file names linked [here](https://github.com/ecn310/course-project-taxes-tariffs/tree/main/Reproducibility_Package/raw_data)
+Alternatively, you can change the file name but that means when running do files you will have to put the file names in place of the file names we have added. 
+
 - Consumption Tax Variable 
   - [Taxes on Goods and Services](https://wits.worldbank.org/CountryProfile/en/Country/BY-COUNTRY/StartYear/1988/EndYear/2022/Indicator/GC-TAX-GSRV-VA-ZS)
  
@@ -50,16 +54,41 @@ Each of the variables mentioned above have their own data set found in the raw_d
 - [consumptiontaxdataset.xlsx]([url](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/raw_data/consumptiondataset.xlsx))
 - [GDPdataset.xlsx]([url](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/raw_data/GDPdataset.xlsx))
 
+
 ## Datasets and Do Files
 
-Now that raw data has been downloaded and accessed. The data must be reshaped from wide to long. You will notice that all of the years are imported from 1988-2022, creating a large table of values. The end goal is to essentially reshape the data from a wide table into a list of each country with each year and it's corresponding data entry. This allows for easier merging of data. To do so, each data file must be changed from it's raw data state into the final data state as seen in our Data_Files folder linked here: [Data_Files](https://github.com/ecn310/course-project-taxes-tariffs/tree/main/Reproducibility_Package/Data_Files)
+Now that raw data has been downloaded and accessed. The data must be reshaped from wide to long. You will notice that all of the years are imported from 1988-2022, creating a large table of values. The end goal is to essentially reshape the data from a wide table into a list of each country with each year and its corresponding data entry. This allows for easier merging of data. To do so, each data file must be changed from its raw data state into the final data state as seen in our Data_Files folder linked here: [Data_Files](https://github.com/ecn310/course-project-taxes-tariffs/tree/main/Reproducibility_Package/Data_Files)
 
-**International tax dataset **
-  - The international tax dataset is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/internationaltax.dta)
-  - The do file to change the data into it's final form is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/internationtaltaxnew.do)
+Using the raw data Excel files, which are loaded into stata through the import feature with no strings, follow these steps. 
 
+__International Tax Dataset__ 
+  - Open the international tax dataset through the import excel sheet feature in stata. Do not check any boxes and click continue. 
+  - The do file to replicate the international tax datasheet is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/internationtaltaxnew.do)
+  - Use the raw data from above loaded into stata and run the data to get the final dataset.
+  -  The final dataset titled International Tax Dataset is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/internationaltax.dta)
+     - The do-file you have just run will give you a new data set that matches the final international tax dataset. 
 
+NOTE: When running the do file, be sure to change the user name. Since the user running this reproducibility package will not have the same running file path it is necessary to change the user name in the file path. For example, taken from the international tax do file "import excel "C:\Users\changenamehere\OneDrive - Syracuse University\Documents\GitHub\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files\internationaltaxdatasheet.xlsx", sheet("Country-Timeseries") Your file path may look different depending on whether you saved the Excel sheet in the one-drive directory or not. Be aware of this and change the file directory as needed. 
 
+Running the do file will reshape the data from wide to long. More detailed commentary on each line of code in the do file can be found in the master do file linked [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/MASTER.do)
+
+__Consumption Tax Dataset___
+  - Open the consumption tax dataset through the import excel sheet feature in stata. Do not check any boxes and click continue. 
+  -  The do file to replicate the final data is [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/consumptiontax.do)
+  - Use the raw data from above loaded into stata and run the data to get the final dataset.
+  -  The final dataset for this variable named consumption tax dataset is found [here ](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/consumptiontaxreproducible.dta)
+  -  Running the do file on the data will give a data set which matches this final data set above. 
+
+__GDP Per Capita Dataset__
+  - Open the GDPdataset.xlsx through the import excel feature in stata. Do not check any boxes and continue. 
+  - The do file to replicate the final dataset is [here ](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/gdpdata.do)
+  - Use the raw data from above loaded into stata and run the data to get the dataset.
+  - The final data set for GDP per capita dataset is found [here ](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/gdpreproducible.dta)
+  - Running the do file on the Excel file sheet will give the same final dataset as the one linked above
+
+With all of the datasets now reshaped from wide to long, it is time to merge the datasets to generate figures, and summary statistics, run correlation tests, and test the null hypothesis. 
+
+## Merging Data
 
 ## Outputs
 The provided code reproduces all the tables and figures in the paper.
