@@ -1,6 +1,7 @@
 ## Taxes and Tariffs Reproducibility Package 
 
-This folder contains the reproducibility package for the Research Paper "Taxes and Tariffs" by Dylan Thomas, Umar Bilgrammi, and Kathryn Sarrge
+This folder contains the reproducibility package for the Research Paper "Shifting Revenue Strategy: The Inverse Relationship
+Between Consumption Tax and Tariff Revenue in Developed and Developing Countries" by Dylan Thomas, Umar Bilgrammi, and Kathryn Sarrge
 
 ### Computational Requirements
 - Stata (code was last run with version 16)
@@ -17,7 +18,7 @@ This folder contains the reproducibility package for the Research Paper "Taxes a
 
 ## Introduction
 
-This Reproducibility package will describe our project files, data, variables, the terminology used in the report, and outputs in great detail. It is designed to organize and keep all files in one place for ease of reproducibility. The table of contents is a good guide to click on and break the project into sections, although we recommend going from item to item in order. 
+The Reproducibility package will describe our project files, data, variables, the terminology used in the report, and outputs in great detail. It is designed to organize and keep all files in one place for ease of reproducibility. The table of contents provides a guide to break the project into sections, although we recommend viewing each section in order. 
 
 TO do
 1. create a list of files mentioned at the bottom
