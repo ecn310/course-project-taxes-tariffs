@@ -9,7 +9,7 @@ Between Consumption Tax and Tariff Revenue in Developed and Developing Countries
 
 ## Table of Contents
 1. [Introduction](#introduction)  
-2. [Data Description and Accessing](#data-description)  
+2. [Data Description and Accessing](https://github.com/ecn310/course-project-taxes-tariffs/edit/main/Reproducibility_Package/README.md#data-description-and-accessing)  
 3. [Datasets and Do Files](#Datasets-and-Do-Files)
 4. [Merging Data](#merging-data)
 5. [Data Outputs](#Data-Outputs)  
