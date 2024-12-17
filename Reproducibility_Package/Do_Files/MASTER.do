@@ -13,11 +13,11 @@
 
 *gdpdata.do \\ importing excel GDP data and reshaping it into a long dataset
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\raw_data"
+cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package"
 
 *replace the user name "kesarrge" with your file path directory 
 
-import excel "GDPdataset.xlsx", sheet("Country-Timeseries")
+import excel "raw_data\GDPdataset.xlsx", sheet("Country-Timeseries")
 
 *in order to combine all three datasets, into one large dataset, we must turn all of the years 1988-2022 into a variable so that stata can reshape the data. 
 *Stata is not able to recognize a number such as 1988 as it's own variable, so years are imported as strings C-AK. 
@@ -55,22 +55,17 @@ drop id
 
 *drop id so stata does not confuse the id variable with other id variables during a dataset merge 
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
+save "Data_Files\gdpdata" , replace 
 
-save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\gdpdata" , replace 
-
-*save the file by replacing "kesarrge" with your name in the file path directory
+*save the file
 
 *we now have one reshaped dataset and will repeat the same procedures for consumption tax and tariffs (international data)
 
 clear
 
-*internationaltaxnew.do \\ importing excel international data and reshaping it into a long dataset
+*** we are now importing international tax's raw excel data and reshaping it into a long dataset
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\raw_data"
-
-import excel "internationaldataset", sheet("Country-Timeseries")
-
+import excel "raw_data\internationaldataset", sheet("Country-Timeseries")
 
 local year = 1988
 
@@ -92,17 +87,13 @@ rename yr international
 
 drop id
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
-
-save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\internationaltax", replace
+save "Data_Files\internationaltax", replace
 
 clear
 
 *consumptiontax.do
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Excel_Files"
-
-import excel "consumptiondataset", sheet("Country-Timeseries")
+import excel "raw_data\consumptiondataset", sheet("Country-Timeseries")
 
 local year = 1988
 
@@ -124,9 +115,7 @@ rename yr consumption
 
 drop id
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
-
-save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\consumptiontaxreproducible", replace
+save "Data_Files\consumptiontaxreproducible", replace
 
 clear
 
@@ -135,27 +124,23 @@ clear
 
 *mergeddatasets.do
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
-
-use consumptiontaxreproducible
+use "Data_Files\consumptiontaxreproducible"
 
 merge 1:1 CountryName year using internationaltax.dta
 
 drop _merge 
 
-save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\merged", replace 
+save "Data_Files\merged", replace 
 
 clear
 
 *sortedultimatemergere.do
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
+use "Data_Files\merged"
 
-use merged.dta
+describe using "Data_Files\gdpreproducible"
 
-describe using gdpreproducible
-
-merge 1:1 CountryName year using gdpreproducible
+merge 1:1 CountryName year using "Data_Files\gdpreproducible"
 
 sort gdp
 
@@ -172,19 +157,17 @@ replace id = 2 if gdp < 12000
 drop if international < -5
 *this drops an outlier which is a bad data entry from China's international tarriffs 
 
-save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\sortedultimatemerge", replace
+save "Data_Files\sortedultimatemerge", replace
 
 clear
 
 *scatterplotconsvint.do
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
-
-use sortedultimatemerge.dta
+use "Data_Files\sortedultimatemerge.dta"
 
 twoway (scatter international consumption, title("Scatterplot of International Tax vs. Consumption Tax") legend(off) ytitle(International (Percent of Revenue)) xtitle(Consumption Tax (Percent of Revenue)) yscale(range(-5 60)) mcolor(forest_green) msize(medsmall) msymbol(triangle_hollow)) lfit international consumption
 
-save "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\twowayscatter", replace
+save "Data_Files\twowayscatter", replace
 
 *save the graph as a png 
 
@@ -192,17 +175,13 @@ clear
 
 *5year.do
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
-
-use sortedultimatemerge
+use "Data_Files\sortedultimatemerge"
 
 keep if year >= 1985 & year <= 1989
 twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50)), title("Histogram of GDP and Consumption") subtitle("from 1985-1989") legend(label(1 "Consumption") label(2 "GDP")) ytitle(frequency of observations)
 clear
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
-
-use sortedultimatemerge
+use "Data_Files\sortedultimatemerge"
 
 keep if year >= 2017 & year <= 2022
 twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50)), title("Histogram of GDP and Consumption") subtitle("from 2017-2022") legend(label(1 "Consumption") label(2 "GDP")) ytitle(frequency of observations)
@@ -211,9 +190,7 @@ clear
 
 *twowaydevelopedhistintcons.do
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
-
-use sortedultimatemerge
+use "Data_Files\sortedultimatemerge"
 
 drop if id == 2
 twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50)), legend(label(1 "Consumption") label(2 "International")) title("Histogram of International and Consumption Tax in Developed Countries", size(small)) xtitle(Percent of Revenue)
@@ -222,9 +199,7 @@ clear
 
 *twowaydevelopinghistintcons.do
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
-
-use sortedultimatemerge
+use "Data_Files\sortedultimatemerge"
 
 drop if id == 1
 twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50)), legend(label(1 "Consumption") label(2 "International")) title("Histogram of International and Consumption Tax in Developing Countries", size(small)) xtitle(Percent of Revenue)
@@ -233,13 +208,11 @@ clear
 
 *twowayhistintcons.do
 
-cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package\Data_Files"
-
-use sortedultimatemerge
+use "Data_Files\sortedultimatemerge"
 
 clear 
 
-use sortedultimatemerge
+use "Data_Files\sortedultimatemerge"
 
 twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50)), legend(label(1 "Consumption") label(2 "International")) title("Histogram of International and Consumption Tax", size(small)) xtitle(Percent of Revenue)
 
