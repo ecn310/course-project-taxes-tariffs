@@ -124,32 +124,26 @@ The pairwise correlation coefficient test between the international tax and the 
 
 A significance test done on developing countries reveals a correlation coefficient of -0.3427, with a P-Value of 0.000 giving us further evidence to reject the null hypothesis. A significance test done on developed countries gives a correlation of coefficient of -0.2509, with a P-value of 0.000. Thus, we can confidently reject the null hypothesis and take note that the correlation between consumption tax and tariffs is weaker in developed countries than it is in developing countries. However, it must be noted that this result could be due to the higher amounts of data entries for developing countries. 
 
-A graphical visualization of the whole data is best represented by Figure 1; a scatterplot including international and consumption data. A line of best fit is displayed on the graph, visualizing the negative correlation between international and consumption tax. The data includes information from 194 countries from 1988 to 2022. The x-axis represents consumption tax and y-axis represents international tax, both in terms of percent of revenue. The line of best fit with a negative slope and negative correlation test indicate a moderate inverse relationship between these variables. 
+Next, we will analyze histograms and scatter-plots to visualize the patterns in the data with an emphasis on the relationship's it reveals between taxes and tariffs. 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\linewidth]{Reproducibility_Package//research_outputs/Scatterplotintvscons.png}
-    \caption{Scatterplot of International tax vs. Consumption Tax}
+    \includegraphics[width=0.8\linewidth]{Reproducibility_Package//research_outputs/twowayhistintcons.png}
+    \caption{Histogram of International and Consumption Tax in Developed and Developing Countries}
     \label{fig:enter-label}
 \end{figure}
 
-Figure 2 provides a visualization that compares international and consumption tax directly. Consumption tax has a higher density at a lower percent of revenue, while international tax seems to take a larger percent of the revenue than consumption tax at around 10 percent of revenue. 
+Figure 1 provides a visualization that compares international and consumption tax in both Developed and Developing Countries. International tax is spread between 0 percent to 60 percent of revenue while Consumption tax has a lower spread in terms of percent of revenue, which is the X-axis of the graph. International tax has a higher density at a lower percent of revenue, while consumption tax seems to take a larger density at around 10 percent of revenue. Consumption tax seems to follow a normal distribution pattern of data, except for a few dips in density at around 11-12 percent of revenue. International tax seems to be right skewed due to the tail of values towards the right from around 30 to 60 percent of revenue. It's density seems to be more highly concentrated at 0-5 percent of revenue. To provide further analysis on the intriguing relationship between the variables, we will now analyze two way histograms for the variables in developed and developing countries separately. 
+
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\linewidth]{Reproducibility_Package//research_outputs/twowayhistintcons.png}
-    \caption{Histogram of International and Consumption Tax}
-    \label{fig:enter-label}
-\end{figure}
-
-Figure 3 shows a histogram of international and consumption tax in only developing countries, allowing for comparisons between Figure 2 in how things differ between all countries and just developing countries. In developing countries, consumption tax and international tax seem to much more similar across more revenue percentages in comparison to Figure 2. 
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Reproducibility_Package//research_outputs/twowayhistdevelopingintcons.png}
+    \includegraphics[width=0.8\linewidth]{Reproducibility_Package//research_outputs/twowayhistdevelopingintcons.png}
     \caption{Histogram of International and Consumption Tax in Developing Countries}
     \label{fig:enter-label}
 \end{figure}
+
+Figure 2 shows a histogram of International and Consumption tax in developing countries, allowing for a comparison of the variables with the main dataset which includes developed countries It must be noted that this histogram looks very similar to Figure 1, likely due to WITS having more data for developing countries than developed countries due to some of the sourcing of their data as mentioned in the Data Section. In developing countries, consumption tax and international tax seem to much more similar across more revenue percentages in comparison to Figure 2. 
 
 Figure 4 displays the opposite relationship in comparison to Figure 3. International tax has a higher density in developing countries at lower percentages of revenue in Figure 4, while Figure 3 shows that International has a lower density in developing countries at higher percentages of revenue. 
 
@@ -157,6 +151,15 @@ Figure 4 displays the opposite relationship in comparison to Figure 3. Internati
     \centering
     \includegraphics[width=0.5\linewidth]{Reproducibility_Package//research_outputs/twowayhistdevelopedintcons.png}
     \caption{Histogram of International and Consumption Tax in Developed Countries}
+    \label{fig:enter-label}
+\end{figure}
+
+A graphical visualization of the whole data is best represented by Figure 1; a scatterplot including international and consumption data. A line of best fit is displayed on the graph, visualizing the negative correlation between international and consumption tax. The data includes information from 194 countries from 1988 to 2022. The x-axis represents consumption tax and y-axis represents international tax, both in terms of percent of revenue. The line of best fit with a negative slope and negative correlation test indicate a moderate inverse relationship between these variables. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Reproducibility_Package//research_outputs/Scatterplotintvscons.png}
+    \caption{Scatterplot of International tax vs. Consumption Tax}
     \label{fig:enter-label}
 \end{figure}
 
