@@ -58,7 +58,7 @@ Each of the variables mentioned above have their own data set found in the raw_d
 
 ## Datasets and Do Files
 
-Now that raw data has been downloaded and accessed. The data must be reshaped from wide to long. You will notice that all of the years are imported from 1988-2022, creating a large table of values. The end goal is to essentially reshape the data from a wide table into a list of each country with each year and its corresponding data entry. This allows for easier merging of data. To do so, each data file must be changed from its raw data state into the final data state as seen in our Data_Files folder linked here: [Data_Files](https://github.com/ecn310/course-project-taxes-tariffs/tree/main/Reproducibility_Package/Data_Files)
+Now that raw data has been downloaded and accessed, the data must be reshaped from wide to long. You will notice that all of the years are imported from 1988-2022, creating a large table of values. The end goal is to essentially reshape the data from a wide table into a list of each country with each year and its corresponding data entry. This allows for easier merging of data. To do so, each data file must be changed from its raw data state into the final data state as seen in our Data_Files folder linked here: [Data_Files](https://github.com/ecn310/course-project-taxes-tariffs/tree/main/Reproducibility_Package/Data_Files)
 
 Using the raw data Excel files, which are loaded into stata through the import feature with no strings, follow these steps. 
 
