@@ -4,4 +4,4 @@ We explore the relationship between consumption taxes, such as value added tax (
 
 # Contents
 1. [Final Report ](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/course_project_taxes_tariffs.pdf)
-2. [Reproducibility Package](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/README.md)
+2. [Reproducibility Package](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Reproducibility_Package.md)
