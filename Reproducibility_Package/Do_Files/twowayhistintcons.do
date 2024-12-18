@@ -1,13 +1,15 @@
 *twowayhistintcons.do
 
-*change file path to yours
+*** histogram of consumption tax and international tax
+
+*change this file path to match yours
 cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package"
 
 *use data from sortedultimatemerge.dta
-use "Data_Files\sortedultimatemerge.dta"
+use "Data_Files\sortedultimatemerge"
 
-*create twoway histogram
+*create the histogram
 twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50)), legend(label(1 "Consumption") label(2 "International")) title("Histogram of International and Consumption Tax", size(small)) xtitle(Percent of Revenue)
 
-*save as png file
-save "research_outputs\twowayhistintcons.png"
+*save the graph as a png 
+graph export "research_outputs\twowayhistintcons.png", as(png) name("Graph") replace
