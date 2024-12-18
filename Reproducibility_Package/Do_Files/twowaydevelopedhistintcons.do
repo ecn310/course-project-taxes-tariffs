@@ -1,3 +1,16 @@
-use "C:\Users\dthoma26\OneDrive - Syracuse University\Documents\GitHub\course-project-taxes-tariffs\Reproducibility_Package\Data_Files\sortedultimatemerge.dta"
+*twowaydevelopedhistintcons.do
+
+*change file path to yours
+cd "C:\Users\kesarrge\OneDrive - Syracuse University\ECN 310\course-project-taxes-tariffs\Reproducibility_Package"
+
+*use data from sortedultimatemerge.dta
+use "Data_Files\sortedultimatemerge.dta"
+
+*we are dropping the countries that we classified as developing
 drop if id == 2
-twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50)), legend(label(1 "consumption") label(2 "international")) title("Histogram of international and consumption tax in developed countries", size(small)) xtitle(percent of revenue)
+
+*create the twoway histogram
+twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50)), legend(label(1 "Consumption") label(2 "International")) title("Histogram of International and Consumption tax in Developed Countries", size(small)) xtitle(Percent of Revenue)
+
+*save as png file
+save "Data_Files\twowayhistdevelopedintcons.png", replace
