@@ -12,5 +12,5 @@ drop if id == 2
 *create the twoway histogram
 twoway (histogram consumption, color(blue%50)) (histogram international, color(red%50)), legend(label(1 "Consumption") label(2 "International")) title("Histogram of International and Consumption tax in Developed Countries", size(small)) xtitle(Percent of Revenue)
 
-*save as png file
-save "Data_Files\twowayhistdevelopedintcons.png", replace
+*save the graph as png file
+graph export "research_outputs\twowayhistdevelopedintcons.png", as(png) name("Graph") replace
