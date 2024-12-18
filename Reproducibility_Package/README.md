@@ -122,9 +122,9 @@ To run the correlation tests and two-sample t-tests, make sure to use the sorted
 - __Correlation tests__
 - We are running a P-test in order to determine if the variables consumption and international have a positive or negative relationship. Furthermore, given the correlation are testing with P-values to see if the correlation between the variables is statistically significant, giving us reason to reject our [null hypothesis](https://github.com/ecn310/course-project-taxes-tariffs/discussions/26). Statistically significant means the relationship between the two variables is not due to random chance, implying there is concrete evidence and theory behind the patterns observed. 
   - First, open the data set. Click the browse data option in stata's menu bar to make sure the right data set has been opened. The correct dataset is sortedultimatemerge.dta.
-    - The correlations test do file is found in the [mergeddata.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/mergeddata.do) file
-    - Run the pwcorr international consumption, sig and look for the bottom-most number on the left side. This is P-value. The number above it is the correlation coefficient. 
-  - Specifically, the line pwcorr international consumption, sig generates a correlation coefficient of -0.3255 and a P-value of 0.000.
+    - The correlations test do file is found on line 18 in the [mergeddata.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/mergeddata.do) file
+    - Run the `pwcorr international consumption, sig` and look for the bottom-most number on the left side. This is P-value. The number above it is the correlation coefficient. 
+  - Specifically, the line `pwcorr international consumption, sig` generates a correlation coefficient of -0.3255 and a P-value of 0.000.
     - This means that there is a moderate inverse relationship between the consumption and international variables. Furthermore, a P-value of 0.000 is statistically significant giving us reason to reject our null hypothesis.
 
 
