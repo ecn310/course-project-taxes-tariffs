@@ -130,7 +130,7 @@ To run the correlation tests and two-sample t-tests, make sure to use the sorted
 
 __Two-Sample T-Tests__
 - The Two-Sample T-Test do file is found in the [T-Tests.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/T-Tests.do)
-- A table of the results is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/T-Tests)
+- A table of the results is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/T-Tests.md)
 - Interpretation of the results is in found in the [LaTeX report](https://www.overleaf.com/project/66fdd3a10a7eff5a6a8c7ef7)
 - Basic introductory summary of the tests: XXXXXXXXXX
 
