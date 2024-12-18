@@ -155,4 +155,3 @@ In addition, we also generated four figures used in our final report. A table sh
 - All Do Files are linked [here](https://github.com/ecn310/course-project-taxes-tariffs/tree/main/Reproducibility_Package/Do_Files)
   - These do files are mentioned in the reproducibility package above except for DATANALYSIS.DO and DATAMANIPULATION.DO
   - These do files are do files containing all the code to reproduce our analysis and create oru data in one centralized area
-     - NOTE: The do files for the T-test are not included in DATANALYSIS.do and must be found from above 
