@@ -20,14 +20,6 @@ Between Consumption Tax and Tariff Revenue in Developed and Developing Countries
 
 The Reproducibility package will describe our project files, data, variables, the terminology used in the report, and outputs in great detail. It is designed to organize and keep all files in one place for ease of reproducibility. The table of contents provides a guide to break the project into sections, although we recommend viewing each section in order. 
 
-TO do
-1. create a list of files mentioned at the bottom
-2. add summary statistics
-3. fill in the two-sample t-tests
-4. add more description if nessecarry
-
-
-
 ## Data Description and Accessing 
 
 List of all variables 
