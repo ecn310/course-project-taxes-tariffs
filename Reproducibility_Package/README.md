@@ -13,8 +13,8 @@ Between Consumption Tax and Tariff Revenue in Developed and Developing Countries
 3. [Datasets and Do Files](#datasets-and-do-files)
 4. [Merging Data](#merging-data)
 5. [Data Outputs](#data-outputs)
-6. [Code for Reproducibility](#code-for-reproducibility)  
-7. [Outputs](#outputs)
+6. [Outputs](#outputs)
+7. [Code for Reproducibility](#code-for-reproducibility)
 
 ## Introduction
 
@@ -132,7 +132,12 @@ __Two-Sample T-Tests__
 - The Two-Sample T-Test do file is found in the [T-Tests.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/T-Tests.do)
 - A table of the results is found [here](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/T-Tests.md)
 - Interpretation of the results is in found in the [LaTeX report](https://www.overleaf.com/project/66fdd3a10a7eff5a6a8c7ef7)
-- Basic introductory summary of the tests: XXXXXXXXXX
+- Basic introductory summary of the tests: We conducted two different "two sample T-tests" in order to test if the difference in means for the developed and developing countries' data was statistically significant with regards to the variables consumption and international.
+
+
+- International dataset: The T-statistic value of -18.27 means that Group 1's mean is lower than Group 2's mean. This means that developed countries mean is lower than developing countries for the variable International Tax. This lines up with the findings of the histogram figures and  summary statistics. Furthermore, all tests confirm the rejection of the null hypothesis. 
+
+- Consumption: The T-statistic of 10.65 means the mean of Group 1 is higher than the mean of group 2. This reveals that Developing countries have a higher mean than developing countries for consumption tax. This lines up with the findings of the summary statistics and the visualizations from the two-way histograms. The P-value of 0.0000, gives us statistically significant evidence to reject the null hypothesis.
 
 ## Outputs
 
@@ -144,3 +149,10 @@ In addition, we also generated four figures used in our final report. A table sh
 | Figure 2 | [sortedultimatemerge.dta](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta) | [twowayhistintcons.do ](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/twowayhistintcons.do)| [twowayhistintcons.png](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/twowayhistintcons.png) |
 | Figure 3 | [sortedultimatemerge.dta](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta)| [twowaydevelopinghistintcons.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/twowaydevelopinghistintcons.do)| [twowayhistdevelopingintcons.png](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/twowayhistdevelopingintcons.png) |
 | Figure 4 | [sortedultimatemerge.dta](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Data_Files/sortedultimatemerge.dta) | [twowaydevelopedhistintcons.do](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/Do_Files/twowaydevelopedhistintcons.do) | [twowayhistdevelopedintcons.png](https://github.com/ecn310/course-project-taxes-tariffs/blob/main/Reproducibility_Package/research_outputs/twowayhistdevelopedintcons.png) |
+
+
+## Code for Reproducibility 
+- All Do Files are linked [here](https://github.com/ecn310/course-project-taxes-tariffs/tree/main/Reproducibility_Package/Do_Files)
+  - These do files are mentioned in the reproducibility package above except for DATANALYSIS.DO and DATAMANIPULATION.DO
+  - These do files are do files containing all the code to reproduce our analysis and create oru data in one centralized area
+     - NOTE: The do files for the T-test are not included in DATANALYSIS.do and must be found from above 
